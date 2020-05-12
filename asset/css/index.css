@@ -4,7 +4,7 @@
 .main_link li {
     color: #fff;
     letter-spacing: 1.5px;
-    font-size: 1.05em;
+    font-size: 1.25em;
 }
 .main_link li:hover a {
     font-family: 'Noto Serif', serif;
@@ -34,8 +34,9 @@
 .text_circle {
     width: 10%;
     position: absolute;
-    top: 5%;
+    top: 25%;
     right: 10%;
+    z-index: 1;
     animation: text_circle_ani 6s infinite linear;
 }
 @keyframes text_circle_ani {
@@ -62,10 +63,10 @@ figure {
     display: flex;
     background-color: #333;
     overflow: hidden;
-    /* position: absolute;
+    position: absolute;
     bottom: 0;
     left: 5%;
-    z-index: 0; */
+    z-index: 0;
 }
 figure::after {
 }

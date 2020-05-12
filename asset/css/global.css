@@ -3,6 +3,7 @@ header {
     width: 100%;
     background: #333;
     position: fixed;
+    z-index: 10;
 }
 header .memu {
     width: 90%;
@@ -15,7 +16,8 @@ header .memu {
 }
 header .memu label {
     position: fixed;
-    z-index: 3;
+    left: 5%;
+    z-index: 9;
     display: block;
     width: 60px;
     height: 60px;
@@ -53,6 +55,7 @@ header .memu .pullmenu {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 8;
     background: #333;
     width: 100vw;
     height: 100vh;
@@ -62,10 +65,11 @@ header .memu .pullmenu  nav {
     position: relative;
 }
 header .memu .pullmenu nav .gab {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(50%);
+    z-index: 8;
+    transform: translateX(-50%) translateY(-50%);
 }
 header .memu .pullmenu nav .gab li {
     font-size: 2em;
@@ -86,9 +90,10 @@ header .memu .pullmenu nav .gab li:hover a{
 }
 header .memu .pullmenu .menu-footer {
     width: 90%;
-    position: absolute;
+    position: fixed;
     bottom: 3%;
     left: 50%;
+    z-index: 10;
     transform: translateX(-50%);
 }
 header .memu .pullmenu .menu-footer .sns {
