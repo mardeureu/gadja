@@ -1,0 +1,115 @@
+/*
+2020-05-09
+Writer : jung sunhee _ jung ocvong
+
+1. font-family
+basic : font-family: 'Noto Sans', sans-serif;
+point : font-family: 'Noto Serif', serif;
+number : font-family: 'Montserrat', sans-serif;
+Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900
+Noto+Sans:ital,wght@0,400;0,700;1,400;1,700
+Noto+Serif:ital,wght@0,400;0,700;1,400;1,700
+2. color 
+bg #fff point color : #30ff00
+bg #333 point color : #c6ff00
+tour page cancel text color : #d75725
+*/
+
+* {
+    font-size: 14px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    -ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    margin:0px;
+    min-width: 320px;
+    direction: ltr;
+    text-align: left;
+}
+ol,
+dl,
+ul,
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+dd
+{
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+span,
+em,
+strong,
+a{
+    display: inline-block;
+}
+h1, h2, h3, h4, h5, h6,p,
+figure {
+    margin: 0;
+}
+input,
+button,
+select,
+textarea {
+    color: inherit;
+    font-family: inherit;
+    direction: ltr;
+    outline: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    outline: none;
+}
+img,
+input,
+button,
+select,
+textarea,
+object {
+    max-width: 100%;
+}
+img {
+    -webkit-user-drag: none;
+    height: auto;
+}
+fieldset {
+    min-width: auto;
+}
+textarea {
+    overflow: hidden;
+    resize: vertical;
+}
+figure {
+    font-size: 0;
+}
+figcaption {
+    font-size: 1rem;
+}
+::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-ineer {
+    padding: 0;
+    border: 0;
+}

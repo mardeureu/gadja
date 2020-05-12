@@ -1,2 +1,0 @@
-# gadja
-gadja productions

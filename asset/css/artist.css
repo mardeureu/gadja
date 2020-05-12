@@ -1,0 +1,45 @@
+.artist-head {}
+.artist-head p {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+.artist-list {
+    width: 85%;
+}
+.artist-list li {
+    width: 100%;
+    overflow: hidden;
+}
+.artist-list li::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.artist-list li .artist-txt-box {
+    float: right;
+}
+.artist-list li .artist-txt-box:nth-of-type(odd) {
+    height: 400px;
+    background-color: #c6ff00;
+}
+.artist-list li .artist-txt-box span {}
+.artist-list li .artist-txt-box a {}
+.artist-list li figure {
+    width: ;
+    overflow: hidden;
+}
+.artist-list li figure figcaption {}
+.artist-list li figure img {}
+.artist-list li .artist-txt-box:nth-of-type(1) {}
+.artist-list li figure:nth-of-type(1) {}
+.artist-list li figure:nth-of-type(1) figcaption {}
+.artist-list li figure:nth-of-type(1) img {}
+.artist-list li .artist-txt-box:nth-of-type(2) {}
+.artist-list li figure:nth-of-type(2) {}
+.artist-list li figure:nth-of-type(2) figcaption {}
+.artist-list li figure:nth-of-type(2) img {}
+.artist-list li .artist-txt-box:nth-of-type(3) {}
+.artist-list li figure:nth-of-type(3) {}
+.artist-list li figure:nth-of-type(3) figcaption {}
+.artist-list li figure:nth-of-type(3) img {}

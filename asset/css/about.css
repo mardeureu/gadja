@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    background-color: #333;
+}
+.heading_underline {
+    width: 200px;
+    height: 1px;
+    background-color: #c6ff00;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+div {
+    margin: 0 auto;
+}
+p {
+    margin: 0 auto;
+    letter-spacing: 1.2px;
+    color: #fff;
+}
+.about_wel {
+    width: 90%;   
+}
+.about_wel::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.about_wel p {
+    width: 55%;
+    float: right;
+}
+.about_wel p span {
+    font-size: inherit;
+}
+.about_wel p span:nth-of-type(1) {
+    color: #c6ff00;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    margin-right: 200px;
+}
+.about_wel p span:nth-of-type(2) {
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #333;
+    text-shadow: -1px 1px 0 #ededed,
+				  1px 1px 0 #ededed,
+				  1px -1px 0 #ededed,
+				  -1px -1px 0 #ededed;
+}
+.wrap > p {
+    width: 90%;
+}
+footer {
+    margin-top: -60px;
+}

@@ -1,0 +1,233 @@
+/* header */
+header {
+    width: 100%;
+    background: #333;
+    position: fixed;
+}
+header .memu {
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    background: #333333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+header .memu label {
+    position: fixed;
+    z-index: 3;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+header .memu label span {
+    width: 8px;
+    height: 8px;
+    margin-top: 26px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+header .memu input[type="checkbox"] {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+}
+header .memu input[type="checkbox"]:checked ~ .pullmenu {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+/* menu */
+header .memu label:hover {
+    background-color: #c6ff00;
+}
+header .memu label:hover span {
+    border: 1px solid #333;
+}
+header .memu .pullmenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333;
+    width: 100vw;
+    height: 100vh;
+}
+header .memu .pullmenu  nav {
+    width: 100%;
+    position: relative;
+}
+header .memu .pullmenu nav .gab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+header .memu .pullmenu nav .gab li {
+    font-size: 2em;
+    line-height: 2.2em;
+}
+header .memu .pullmenu nav .gab li a {
+    font-size: inherit;
+}
+header .memu .pullmenu nav .gab li a.active {
+    font-weight: 700;
+    color: #fff
+}
+header .memu .pullmenu nav .gab li:hover a{
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    color: #c6ff00;
+    line-height: 0;
+}
+header .memu .pullmenu .menu-footer {
+    width: 90%;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .memu .pullmenu .menu-footer .sns {
+}
+header .memu .pullmenu .menu-footer a {
+}
+header .memu .pullmenu .menu-footer a:nth-of-type(1) {
+}
+header .memu .pullmenu .menu-footer a:nth-of-type(2) {
+    margin-left: 30px;
+}
+header .memu .pullmenu .menu-footer .sns a img {}
+header .memu .pullmenu .menu-footer .symbol {
+    text-align: right;
+}
+header .memu .pullmenu .menu-footer .symbol a {
+    letter-spacing: 2px;
+    font-weight: 700;
+    vertical-align: super;
+}
+header .memu h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+header .memu h1 a {
+    font-size: inherit;
+}
+header .memu button {
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+}
+header .memu [name="lang_switch"] span {
+    vertical-align: .05em;
+}
+header .memu button:hover {
+    color: #c6ff00;
+    font-weight: 700;
+}
+
+/* wrap */
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* bg */
+.bg-dark {
+    height: 100vh;
+    background-color: #333;
+}
+
+/* heading */
+h2 {
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 2px;
+}
+
+/* local menu */
+.local-menu {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 60px;
+}
+.local-menu li {
+    font-size: .8em;
+    color: #fff;
+    display: inline;
+}
+.local-menu li a {
+    font-size: inherit;
+}
+.local-menu li:hover a {
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    color: #c6ff00;
+}
+.local-menu li a::after {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 1px;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.local-menu li:last-child a::after {
+    content: "";
+    display: inline;
+}
+/* footer */
+footer {
+    background-color: #333;
+    color: #ededed;
+}
+footer dl {
+    width: 90%;
+    margin: 0 auto;
+}
+footer dl dt {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+}
+footer dl dd {
+    letter-spacing: 1px;
+    font-size: .8em;
+    text-align: center;
+}
+footer dl dd:nth-of-type(1)::before {
+    content: "";
+    display: inline-block;
+    width: 500px;
+    height: 
+}
+footer dl dd:nth-of-type(1) {
+    text-align: right;
+}
+footer dl dd:nth-of-type(2) {
+}
+footer dl dd:nth-of-type(2) span {
+    font-size: inherit;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+}
+footer dl dd:nth-of-type(3) {
+    color: #fff;
+    padding-bottom: 10px;
+}
