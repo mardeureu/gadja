@@ -143,7 +143,6 @@ header .memu button:hover {
     width: 100%;
     margin: 0 auto;
 }
-
 /* bg */
 .bg-dark {
     height: 100vh;
@@ -151,14 +150,6 @@ header .memu button:hover {
 }
 
 /* heading */
-h2 {
-    width: 90%;
-    margin: auto;
-    color: #fff;
-    font-weight: 400;
-    font-size: 5em;
-    letter-spacing: 2px;
-}
 
 /* local menu */
 .local-menu {
@@ -168,7 +159,7 @@ h2 {
     padding-top: 60px;
 }
 .local-menu li {
-    font-size: .8em;
+    font-size: .9em;
     color: #fff;
     display: inline;
 }
@@ -200,6 +191,7 @@ footer {
     color: #ededed;
 }
 footer dl {
+    border-top: 1px solid #999;
     width: 90%;
     margin: 0 auto;
 }
@@ -215,17 +207,10 @@ footer dl dd {
     font-size: .8em;
     text-align: center;
 }
-footer dl dd:nth-of-type(1)::before {
-    content: "";
-    display: inline-block;
-    width: 500px;
-    height: 
-}
 footer dl dd:nth-of-type(1) {
-    text-align: right;
+    font-style: italic;
 }
-footer dl dd:nth-of-type(2) {
-}
+footer dl dd:nth-of-type(2) {}
 footer dl dd:nth-of-type(2) span {
     font-size: inherit;
     font-weight: 700;

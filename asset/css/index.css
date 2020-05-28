@@ -1,40 +1,36 @@
-
-.main_link {
+.index-en {
+    display: flex;
 }
-.main_link li {
+.left-layout {
+    width: 5%;
+    height: 100vh;
+}
+.main_menu {
+    display: flex;
+    -moz-transform: rotateZ(270deg) translateX(-70h);
+    -webkit-transform: rotateZ(270deg) translateX(-70vh);
+    transform: rotateZ(270deg) translateX(-70vh);
+}
+.main_menu li {
     color: #fff;
     letter-spacing: 1.5px;
     font-size: 1.25em;
+    padding-left: 50px;
 }
-.main_link li:hover a {
+.main_menu li:hover a {
     font-family: 'Noto Serif', serif;
     font-style: italic;
     color: #c6ff00;
 }
-.main_link li a {
+.main_menu li a {
     -moz-transform-origin: top left;
     -webkit-transform-origin: top left;
     transform-origin: top left;
 }
-.main_link li:nth-of-type(1) a {
-    -moz-transform: translateX(20px) translateY(500px) rotateZ(270deg);
-    -webkit-transform: translateX(20px) translateY(250px) rotateZ(270deg);
-    transform: translateX(20px) translateY(250px) rotateZ(270deg);
-}
-.main_link li:nth-of-type(2) a {
-    -moz-transform: translateX(20px) translateY(500px) rotateZ(270deg);
-    -webkit-transform: translateX(20px) translateY(400px) rotateZ(270deg);
-    transform: translateX(20px) translateY(400px) rotateZ(270deg);
-}
-.main_link li:nth-of-type(3) a {
-    -moz-transform: translateX(20px) translateY(500px) rotateZ(270deg);
-    -webkit-transform: translateX(20px) translateY(500px) rotateZ(270deg);
-    transform: translateX(20px) translateY(500px) rotateZ(270deg);
-}
 .text_circle {
     width: 10%;
-    position: absolute;
-    top: 25%;
+    position: fixed;
+    top: 10%;
     right: 10%;
     z-index: 1;
     animation: text_circle_ani 6s infinite linear;
@@ -47,19 +43,12 @@
         transform: rotateZ(0deg);
     }
 }
-.main-line {
-    width: 120px;
-    height: 1px;
-    background-color: #c6ff00;
-    margin-left: 7%;
-    margin-bottom: 20px;
-}
 canvas {
     margin-left: 5%;
     display: block;
 }
 figure {
-    margin: auto;
+    width: 95%;
     display: flex;
     background-color: #333;
     overflow: hidden;
@@ -68,22 +57,31 @@ figure {
     left: 5%;
     z-index: 0;
 }
-figure::after {
-}
 figure img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #c6ff00;;
+    background-color: #c6ff00;
+    /* animation: main_slide_animation .5s cubic-bezier(0.78, 0.51, 0.14, 0.74) alternate both; */
 }
 figure img {
+    display: block;
+    position: relative;
     margin-left: 5%;
 }
 figure img:first-child {
-    /* margin-left: 0; */
-} 
-@keyframes main_slide_ani {
+    margin-left: 0;
+    /* animation: main_slide_animation .6s .5s cubic-bezier(0.78, 0.51, 0.14, 0.74) alternate both; */
+}
+@keyframes main_slide_animation {
     0% {
-
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 figcaption {
@@ -125,4 +123,15 @@ button#main_next {
 #main_next span:nth-of-type(2) {
     width: 30px;
     transform: translateX(-30px) translateY(-5px) rotateZ(20deg);
+}
+/* slide */
+figure img:nth-of-type(1)::after {
+    content: 'North Korea Dance';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    color: #fff;
+    width: 100%;
+    height: 100%;
 }

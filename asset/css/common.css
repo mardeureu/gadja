@@ -57,7 +57,10 @@ strong,
 a{
     display: inline-block;
 }
-h1, h2, h3, h4, h5, h6,p,
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6, p,
 figure {
     margin: 0;
 }
@@ -105,6 +108,7 @@ figcaption {
 button {
     cursor: pointer;
     background: transparent;
+    padding: 0;
     border: 0;
     outline: none;
 }

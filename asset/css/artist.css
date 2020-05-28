@@ -1,45 +1,114 @@
-.artist-head {}
-.artist-head p {
+body {
+    background-color: #333;
+}
+.artist {
+    margin-bottom: 50px;
+}
+.subpage-head {
     width: 90%;
     margin: 0 auto;
     color: #fff;
+    padding-bottom: 50px;
+}
+.subpage-head h2 {
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 5px;
+}
+.subpage-head p {
+    letter-spacing: 1px;
 }
 .artist-list {
-    width: 85%;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 5%;
 }
 .artist-list li {
     width: 100%;
+    height: 400px;
+    display: flex;
+    margin-bottom: 1px;
     overflow: hidden;
 }
-.artist-list li::after {
-    content: "";
-    display: table;
-    clear: both;
+.artist-list li:last-child {
+    margin-bottom: 0;
 }
 .artist-list li .artist-txt-box {
-    float: right;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
 }
-.artist-list li .artist-txt-box:nth-of-type(odd) {
-    height: 400px;
+.artist-list li:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+.artist-list li:nth-of-type(odd) .artist-txt-box {
     background-color: #c6ff00;
 }
-.artist-list li .artist-txt-box span {}
-.artist-list li .artist-txt-box a {}
+.artist-list li .artist-txt-box span /* name */{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    padding-bottom: 1em;
+}
+.artist-list li .artist-txt-box a {
+    width: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7em;
+    border: 1px solid #333;
+    padding: 8px 50px;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.artist-list li .artist-txt-box a:hover {
+    background-color: #333;
+    color: #fff
+}
+.artist-list li:nth-last-of-type(even) .artist-txt-box a:hover {
+    border: 0px;
+    background-color: #c6ff00;
+    color: #333;
+}
+.artist-list li:nth-last-of-type(even) .artist-txt-box span {
+    color: #fff;
+}
+.artist-list li:nth-last-of-type(even) .artist-txt-box a {
+    border: 1px solid #fff;
+    color: #fff;
+}
 .artist-list li figure {
-    width: ;
+    height: 100%;
     overflow: hidden;
 }
-.artist-list li figure figcaption {}
-.artist-list li figure img {}
-.artist-list li .artist-txt-box:nth-of-type(1) {}
-.artist-list li figure:nth-of-type(1) {}
-.artist-list li figure:nth-of-type(1) figcaption {}
-.artist-list li figure:nth-of-type(1) img {}
-.artist-list li .artist-txt-box:nth-of-type(2) {}
-.artist-list li figure:nth-of-type(2) {}
-.artist-list li figure:nth-of-type(2) figcaption {}
-.artist-list li figure:nth-of-type(2) img {}
-.artist-list li .artist-txt-box:nth-of-type(3) {}
-.artist-list li figure:nth-of-type(3) {}
-.artist-list li figure:nth-of-type(3) figcaption {}
-.artist-list li figure:nth-of-type(3) img {}
+.artist-list li figure:hover img {
+    -ms-transform: scale3d(1.15, 1.15, 1);
+    transform: scale3d(1.15, 1.15, 1);
+}
+.artist-list li figure img {
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* nth-oh-type */
+.artist-list li:nth-of-type(3n-1) .artist-txt-box {
+    width: 34%;
+}
+.artist-list li:nth-of-type(3n-1) figure {
+    width: 66%;
+}
+.artist-list li:nth-of-type(3n-1) figure img {}
+.artist-list li:nth-of-type(3n-2) .artist-txt-box {
+    width: 34%;
+}
+.artist-list li:nth-of-type(3n-2) figure {
+    width: 66%;
+}
+.artist-list li:nth-of-type(3n-2) figure img {}
+.artist-list li:nth-of-type(3n) .artist-txt-box {
+    width: 66%;
+}
+.artist-list li:nth-of-type(3n) figure {
+    width: 34%;
+}
+.artist-list li:nth-of-type(3n) figure img {}
