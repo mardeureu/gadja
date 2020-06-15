@@ -1,0 +1,85 @@
+
+body{
+    min-height: 100vh;
+}
+h2 {
+    width: 90%;
+    margin: 0 auto;
+    color: #333;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 5px;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: #999;
+    margin-top: 10vh;
+    margin-left: 15%;
+    margin-right: 5%;
+    font-size: 1.15em;
+}
+h3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    margin-top: 5px;
+}
+.contact {
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.square {
+    position: relative;
+    width: 50%;
+    height: 40vh;
+}
+.square span {
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid #30ff00;
+    position: absolute;
+}
+.square span:nth-last-of-type(1) {
+    top: calc(50% - .1px);
+    right: calc(50% - .1px);
+}
+.square span:nth-last-of-type(2) {
+    top: calc(50% - 10vh - .1px);
+    left: calc(50% - 10vh - .1px);
+}
+.square span:nth-last-of-type(3) {
+    top: 0;
+    left: calc(50% - .1px);
+}
+.contact-info {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+}
+.contact-info dt {
+    font-family: inherit;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+.contact-info dd {
+    font-family: inherit;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.contact-info div {
+    width: 49%;
+    display: inline-block;
+    margin: 20px 0;
+}
+.contact-info dd:last-child {
+    width: 60%;
+}

@@ -1,7 +1,6 @@
 /* header */
 header {
     width: 100%;
-    background: #333;
     position: fixed;
     z-index: 10;
 }
@@ -9,7 +8,6 @@ header .memu {
     width: 90%;
     height: 60px;
     margin: auto;
-    background: #333333;
     color: #fff;
     display: flex;
     align-items: center;
@@ -80,7 +78,6 @@ header .memu .pullmenu nav .gab li a {
 }
 header .memu .pullmenu nav .gab li a.active {
     font-weight: 700;
-    color: #fff
 }
 header .memu .pullmenu nav .gab li:hover a{
     font-family: 'Noto Serif', serif;
@@ -137,7 +134,21 @@ header .memu button:hover {
     color: #c6ff00;
     font-weight: 700;
 }
-
+/* lightmode */
+header.lightmode .memu label span {
+    border: 1px solid #333;
+}
+header.lightmode .memu .pullmenu {
+    background: #fff;
+}
+header.lightmode .memu h1,
+header.lightmode .memu {
+    color: #333
+}
+header.lightmode .memu button:hover
+header.lightmode .memu .pullmenu nav .gab li:hover a{
+    color: #30ff00;
+}
 /* wrap */
 .wrap {
     width: 100%;
@@ -145,12 +156,8 @@ header .memu button:hover {
 }
 /* bg */
 .bg-dark {
-    height: 100vh;
     background-color: #333;
 }
-
-/* heading */
-
 /* local menu */
 .local-menu {
     width: 90%;
@@ -184,16 +191,43 @@ header .memu button:hover {
 .local-menu li:last-child a::after {
     content: "";
     display: inline;
+    width: 0;
+    height: 0;
+    background-color: none;
+    vertical-align: baseline;
+    margin-left: 0;
+    margin-right: 0;
 }
+/* lightmode */
+.wrap .lightmode li {
+    color: #333;
+}
+.wrap .lightmode li a::after {
+    background-color: #333;
+}
+
 /* footer */
 footer {
-    background-color: #333;
-    color: #ededed;
+    margin: 0 auto;
+    width: 90%;
+    border-top: 1px solid #999;
+}
+footer::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+footer p {
+    width: 50%;
+    font-size: .85em;
+    font-style: italic;
+    float: left;
+    color: #999;
 }
 footer dl {
-    border-top: 1px solid #999;
-    width: 90%;
-    margin: 0 auto;
+    width: 50%;
+    float: left;
+    color: #999;
 }
 footer dl dt {
     position:absolute;
@@ -205,19 +239,34 @@ footer dl dt {
 footer dl dd {
     letter-spacing: 1px;
     font-size: .8em;
-    text-align: center;
+    text-align: right;
 }
-footer dl dd:nth-of-type(1) {
-    font-style: italic;
-}
+footer dl dd:nth-of-type(1) {}
 footer dl dd:nth-of-type(2) {}
-footer dl dd:nth-of-type(2) span {
-    font-size: inherit;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-decoration: underline;
-}
 footer dl dd:nth-of-type(3) {
-    color: #fff;
     padding-bottom: 10px;
+    color: #ededed;
+}
+/* lightmode */
+footer.lightmode p,
+footer.lightmode dl {
+    color: #ccc;
+}
+footer.lightmode dl dd:nth-of-type(3) {
+    color: #999;
+}
+/* 1depth sub */
+.subpage-head {
+    width: 90%;
+    margin: 0 auto;
+    color: #ededed;
+    padding-bottom: 50px;
+}
+.subpage-head h2 {
+    font-weight: 400;
+    font-size: 5em;
+    letter-spacing: 5px;
+}
+.subpage-head p {
+    letter-spacing: 1px;
 }

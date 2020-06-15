@@ -1,0 +1,96 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+.production {
+    margin-bottom: 300px;
+}
+.prod-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.prod-container li {
+    width: calc(100%);
+    margin-top: 20px;
+    border-left: 1px solid #999;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0;
+}
+.prod-container li:nth-of-type(3n-3) {
+    border-left: 0px;
+}
+.prod-container li::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+}
+.prod-container .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-left: 0;
+}
+.prod-container .item1 figure a img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+.prod-container li .prod-tit {
+    width: 100%;
+    font-size: 1.8rem;
+    min-height: 140px;
+    margin-top: 10px;
+}
+.prod-container li .prod-artist {
+    font-size: .8rem;
+}
+.prod-container li > a {
+    text-align: right;
+    color: #333;
+    font-size: .7rem;
+    letter-spacing: 3px;
+    padding: 5px 40px;
+    background-color: #c6ff00;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+.prod-container li > a::after {
+    content: 'MOVE';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: .7rem;
+    letter-spacing: 3px;
+    padding: 5px 40px;
+    background-color: #555;
+    color: #c6ff00;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: .5s;
+}
+.prod-container li > a:hover::after {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.prod-container li figure {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+.prod-container li figure a {
+    width: 100%;
+    height: 100%;
+}
+.prod-container li figure a img {
+    width: 100%;
+    transition: .5s;
+}
+.prod-container li figure:hover img {
+    transform: scale3d(1.15, 1.15, 1);
+    filter: contrast(120%);

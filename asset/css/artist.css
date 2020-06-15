@@ -4,20 +4,7 @@ body {
 .artist {
     margin-bottom: 50px;
 }
-.subpage-head {
-    width: 90%;
-    margin: 0 auto;
-    color: #fff;
-    padding-bottom: 50px;
-}
-.subpage-head h2 {
-    font-weight: 400;
-    font-size: 5em;
-    letter-spacing: 5px;
-}
-.subpage-head p {
-    letter-spacing: 1px;
-}
+
 .artist-list {
     width: 90%;
     margin: 0 auto;

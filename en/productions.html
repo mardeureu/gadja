@@ -15,117 +15,128 @@
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../asset/css/common.css">
+    <link rel="stylesheet" href="../asset/css/global.css">
+    <link rel="stylesheet" href="../asset/css/production.css">
     <!-- javascript -->
     <!-- favicon -->
 </head>
 <body>
     <!-- header -->
     <header role="banner">
-        <label for="burgermenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <input type="checkbox" id="burgermenu">
-        <nav role="navigation" aria-label="gnb">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Artist</li>
-                <li>Productions</li>
-                <li>Tours</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
-        </a>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
-        </a>
-        <a href="index.html"></a>
-        <button type="button" name="lang_switch">FR &harr; EN</button>
+        <div class="memu">
+            <label for="burgermenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="burgermenu">
+            <div class="pullmenu">
+                <nav role="navigation" aria-label="gnb">
+                    <ul class="gab">
+                        <li><a href="../index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="artist.html">Artist</a></li>
+                        <li><a href="productions.html">Productions</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-footer" role="list">
+                        <a role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="12" src="../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
+                        </a>
+                        <a  role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="27" src="../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
+                        </a>
+                    <div role="listitem" class="symbol"><a href="../index.html">GADJA</a></div>
+                </div>
+            </div>
+            <h1><a href="../index.html">GADJA</a></h1>
+            <button type="button" name="lang_switch">FR &harr; EN</button>
+        </div>
     </header>
 
-    <!-- contents -->
-    <div class="wrap">
+    <div class="wrap production">
         <!-- Local menu -->
         <ul class="local-menu">
-            <li>Home</li>
-            <li>Productions</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="productions.html">Productions</a></li>
         </ul>
-
-        <h2>Productions</h2>
-        <p>The programme includes research projects with external partners, conferences and symposia, research-led practice sharing sessions and professional development events. The centre seeks to operate openly and collaboratively to support high quality and innovative research in diverse fields relevant to learning in galleries and to provide a platform for dialogue and debate.</p>
+        <!-- subpage-head -->
+        <section class="subpage-head">
+            <h2 >Productions</h2>
+            <p>The programme includes research projects with external partners, conferences and symposia, research-led practice sharing sessions and professional development events. The centre seeks to operate openly and collaboratively to support high quality and innovative research in diverse fields relevant to learning in galleries and to provide a platform for dialogue and debate.</p>
+        </section>
         <div class="circles">
             <span></span>
         </div>
-        <ul>
-            <li>
+        <!-- contents -->
+        <ul class="prod-container">
+            <li class="item1">
                 <span class="prod-tit">DRAGONS</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/01_DRAGONS.jpg" alt=""></a></figure>
             </li>
-            <li>
+            <li class="item2">
                 <span class="prod-tit">North Korea Dance</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/02_North_Korea_Dance.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Daeshim Dance</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/03_Daeshim Dance.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Ahnsim Dance</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/04_Ahnsim_Dance.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Let Me Change Your Name</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/05_Let_Me_Change_Your_Name.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Dancing Grandmothers</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/06_Dancing_Grandmothers.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Dancing Middle-Aged Men</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/07_Dancing_Middle-Aged Men.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Dancing Teen Teen</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/08_Dancing_Teen_Teen.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Symphoca Princess Bari</span>
                 <span class="prod-artist">Eun-Me Ahn</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="../asset/img/prod/09_Symphoca_Princess_Bari.jpg" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Productions name</span>
                 <span class="prod-artist">Artist name</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="" alt=""></a></figure>
             </li>
             <li>
                 <span class="prod-tit">Productions name</span>
                 <span class="prod-artist">Artist name</span>
                 <a href="#">VIWE</a>
-                <figure><img src="" alt=""></figure>
+                <figure><a href="#"><img src="" alt=""></a></figure>
             </li>
         </ul>
     </div>

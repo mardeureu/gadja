@@ -15,66 +15,78 @@
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../asset/css/common.css">
+    <link rel="stylesheet" href="../asset/css/global.css">
+    <link rel="stylesheet" href="../asset/css/contact.css">
     <!-- javascript -->
     <!-- favicon -->
 </head>
 <body>
     <!-- header -->
-    <header role="banner">
-        <label for="burgermenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <input type="checkbox" id="burgermenu">
-        <nav role="navigation" aria-label="gnb">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Artist</li>
-                <li>Productions</li>
-                <li>Tours</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
-        </a>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
-        </a>
-        <a href="index.html"></a>
-        <button type="button" name="lang_switch">FR &harr; EN</button>
+    <header class="lightmode" role="banner">
+        <div class="memu">
+            <label for="burgermenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="burgermenu">
+            <div class="pullmenu">
+                <nav role="navigation" aria-label="gnb">
+                    <ul class="gab">
+                        <li><a href="../index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="artist.html">Artist</a></li>
+                        <li><a href="productions.html">Productions</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-footer" role="list">
+                        <a role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="12" src="../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
+                        </a>
+                        <a  role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="27" src="../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
+                        </a>
+                    <div role="listitem" class="symbol"><a href="../index.html">GADJA</a></div>
+                </div>
+            </div>
+            <h1><a href="../index.html">GADJA</a></h1>
+            <button type="button" name="lang_switch">FR &harr; EN</button>
+        </div>
     </header>
-
-    <!-- contents -->
     <div class="wrap">
         <!-- Local menu -->
-        <ul class="local-menu">
-            <li>Home</li>
-            <li>Contact</li>
+        <ul class="local-menu lightmode">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="contact.html">contact</a></li>
         </ul>
-
+    <!-- contents -->
         <h2>Contact</h2>
-            <h6>GADAJA PRODUCTIONS</h6>
+        <h3>GADAJA PRODUCTIONS</h3>
+        <div class="contact">
             <div class="square">
                 <span></span><span></span><span></span>
             </div>
-            <dl class="contact">
+            <dl class="contact-info">
                 <dt>Director</dt>
                 <dd>Jean-Marie CHABOT</dd>
-                <dt>Tel</dt>
-                <dd><a href="tel:+330601320498">+33 (0)6 01 32 04 98</a></dd>
-                <dt>e-mail</dt>
-                <dd><a href="mailto:jm@gadjaprod.com">jm@gadjaprod.com</a></dd>
+                <div>
+                    <dt>Tel</dt>
+                    <dd><a href="tel:+330601320498">+33 (0)6 01 32 04 98</a></dd>
+                </div>
+                <div>
+                    <dt>e-mail</dt>
+                    <dd><a href="mailto:jm@gadjaprod.com">jm@gadjaprod.com</a></dd>
+                </div>
                 <dt>Address</dt>
                 <dd>postale GADJA PRODUCTIONS 59 Boulevard du Président Wilson 44600 Saint-Nazaire - France</dd>
             </dl>
+        </div>
     </div>
     <!-- contents END-->
-
     <!-- footer -->
-    <footer role="contentinfo">
+    <footer class="lightmode" role="contentinfo">
         <p>&copy;2016 par Gadja Productions.</p>
         <dl>
             <dt>Company</dt>
