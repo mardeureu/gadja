@@ -48,11 +48,11 @@ canvas {
     display: block;
 }
 figure {
-    width: 95%;
+    width: 90%;
     display: flex;
     background-color: #333;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 5%;
     z-index: 0;
@@ -67,9 +67,12 @@ figure img::before {
     background-color: #c6ff00;
     /* animation: main_slide_animation .5s cubic-bezier(0.78, 0.51, 0.14, 0.74) alternate both; */
 }
+figure video {
+    min-width: 100%;
+    margin-left: 5%;
+}
 figure img {
-    display: block;
-    position: relative;
+    width: 100%;
     margin-left: 5%;
 }
 figure img:first-child {

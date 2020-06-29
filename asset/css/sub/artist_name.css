@@ -6,6 +6,11 @@ body {}
     width: 90%;
     margin: 0 auto;
 }
+.artist_sub::after {
+    content: '';
+    display: table;
+    clear: both;
+}
 .artist_sub h3 {
     width: 90%;
     margin: 0 auto;
@@ -13,7 +18,6 @@ body {}
     letter-spacing: 5px;
     font-weight: 400;
     font-size: 3.5em;
-    letter-spacing: 5px;
 }
 .artist_sub h3 span {
     font-weight: 700;
@@ -232,34 +236,4 @@ body {}
     font-size: 1.05em;
     font-weight: 500;
     letter-spacing: 2px;
-}
-/* sub contact */
-.works .sub-contect {
-    width: 80%;
-    margin-left: 20%;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.works .sub-contect dt {
-    font-weight: 700;
-    margin-left: 20px;
-}
-.works .sub-contect dd {
-
-}
-.works .sub-contect dd a {
-    text-decoration: underline;
-    
-}
-.works .sub-contect dd:nth-of-type(1):after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 50px;
-    width: 100px;
-    height: 1px;
-    background-color: #333;
 }

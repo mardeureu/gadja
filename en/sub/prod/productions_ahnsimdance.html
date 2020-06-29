@@ -14,47 +14,56 @@
     <title>Ahnsim Dance - Productions - GADJA</title>
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../asset/css/common.css">
+    <link rel="stylesheet" href="../../../asset/css/common.css">
+    <link rel="stylesheet" href="../../../asset/css/global.css">
+    <link rel="stylesheet" href="../../../asset/css/sub/productions_sub.css">
     <!-- javascript -->
     <!-- favicon -->
 </head>
 <body>
     <!-- header -->
     <header role="banner">
-        <label for="burgermenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <input type="checkbox" id="burgermenu">
-        <nav role="navigation" aria-label="gnb">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Artist</li>
-                <li>Productions</li>
-                <li>Tours</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
-        </a>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
-        </a>
-        <a href="../index.html"></a>
-        <button type="button" name="lang_switch">FR &harr; EN</button>
+        <div class="memu">
+            <label for="burgermenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="burgermenu">
+            <div class="pullmenu">
+                <nav role="navigation" aria-label="gnb">
+                    <ul class="gab">
+                        <li><a href="../../../index.html" class="active">Home</a></li>
+                        <li><a href="../../about.html">About</a></li>
+                        <li><a href="../../artist.html">Artist</a></li>
+                        <li><a href="../../productions.html">Productions</a></li>
+                        <li><a href="../../tours.html">Tours</a></li>
+                        <li><a href="../../contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-footer" role="list">
+                        <a role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="12" src="../../../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
+                        </a>
+                        <a  role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="27" src="../../../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
+                        </a>
+                    <div role="listitem" class="symbol"><a href="../../../index.html">GADJA</a></div>
+                </div>
+            </div>
+            <h1><a href="../../../index.html">GADJA</a></h1>
+            <button type="button" name="lang_switch">FR &harr; EN</button>
+        </div>
     </header>
-
     <!-- contents -->
-    <div class="wrap">
+    <div class="wrap productions">
         <!-- Local menu -->
         <ul class="local-menu">
-            <li>Home</li>
-            <li>Productions</li>
-            <li>Ahnsim Dance</li>
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../artist.html">Artist</a></li>
+            <li><a href="artist_name.html">Eun-Me Ahn</a></li>
         </ul>
+        <!-- contents -->
         <section class="prod-content-head">
             <h3>Ahnsim Dance</h3>
             <dl>
@@ -64,7 +73,7 @@
         </section>
         <video class="tralier" src="" poster="" type="video/mp4" title="" autoplay playsinline muted loop></video>
         <div class="prod-content-wrap">
-            <a href="#" target="_blank">Dossier</a>
+            <a href="#" download target="_blank">Dossier</a>
             <p>
                 A three word title in the Morning Calm Country language : AhnSim Dance.
                 Let's analyze it from the end :
@@ -112,6 +121,7 @@
             </div>
         </dl>
     </div>
+    <!--full slide-->
     <section class="gallrey-slide">
         <div class="col-deco">
             <span></span>
@@ -180,7 +190,6 @@
 
     </div>
     <!-- contents END-->
-
     <!-- footer -->
     <footer role="contentinfo">
         <p>&copy;2016 par Gadja Productions.</p>

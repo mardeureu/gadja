@@ -1,0 +1,225 @@
+body {
+    width: 100%;
+    background-color: #333;
+    color: #ededed;
+}
+.local-menu {
+    width: 100%;
+}
+.productions {
+    width: 90%;
+}
+.productions .prod-content-head {}
+.productions .prod-content-head h3 {
+    width: 7em;
+    font-weight: 400;
+    font-size: 3.5em;
+    letter-spacing: 3px;
+}
+.productions .prod-content-head dl {
+    float: right;
+    margin-bottom: 10px;
+}
+.productions .prod-content-head dl::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.productions .prod-content-head dt {
+    font-weight: 700;
+    margin-right: 30px;
+    font-style: italic;
+    letter-spacing: 1px;
+    float: left;
+}
+.productions .prod-content-head dd {
+    float: left;
+    letter-spacing: 2px;
+}
+.productions video {
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: 0px;
+}
+.productions video:focus {
+    outline: none;
+}
+
+.productions .prod-content-wrap {
+    margin-top: 30px;
+}
+.productions .prod-content-wrap::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.productions .prod-content-wrap a {
+    font-size: .85em;
+    letter-spacing: 8px;
+    border: 1px solid #ededed;
+    padding: 10px 50px;
+    float: left;
+    transition: all .5s cubic-bezier(0, 0.79, 0.99, 0.62);
+}
+.productions .prod-content-wrap a:hover {
+    border-radius: 20px;
+    /* background-color: #ededed; */
+    color: #c6ff00;
+    opacity: .8;
+    box-shadow: 2px 2px 5px -5px rgba(255, 255, 255, .5);
+    transition: all .2s cubic-bezier(0, 0.79, 0.99, 0.62);
+}
+.productions .prod-content-wrap p {
+    width: 60%;
+    float: right;
+    font-size: 1.15em;
+    letter-spacing: .5px;
+}
+.productions .prod-content-wrap p span {
+    display: table;
+    margin-bottom: 30px;
+}
+
+.tours,
+.productions .credit {
+    width: 80%;
+    margin-left: 20%;
+}
+.productions .credit::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.tours table caption,
+.productions .credit h4.subtit {
+    margin-left: 0;
+}
+.tours table .subtit::after,
+.productions .credit .subtit::after {
+    color: #c6ff00;
+}
+.productions .credit div {
+}
+.productions .credit dt {
+    padding-top: 20px;
+}
+.productions .credit dd {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #999;
+    font-weight: 700;
+    
+}
+.productions .credit .credit-left {
+    float: left;
+    width: calc(50% - 10px);
+}
+.productions .credit .credit-right {
+    float: right;
+    width: calc(50% - 10px);
+}
+.productions .credit .credit-left dt:first-child,
+.productions .credit .credit-right dt:first-child {
+    border-top: 1px solid #999;
+}
+/* gallrey-slide */
+.gallrey-slide {
+    width: 100%;
+    margin: 50px 0;
+}
+.gallrey-slide figure {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+}
+.gallrey-slide figure button {
+    font-size: 3em;
+    color: #333;
+    position: absolute;
+}
+.gallrey-slide figure img {
+    margin-left: 50px;
+}
+.gallrey-slide .deco {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 20vh;
+    text-align: right;
+}
+.gallrey-slide .deco span {
+    width: 1px;
+    height: 20vh;
+    background-color: #c6ff00;
+    margin-left: 10px;
+}
+.gallrey-slide .deco span:nth-of-type(n+2):nth-of-type(-n+6) {
+    margin: 0 30px;
+}
+.gallrey-slide .deco span:last-child {
+    margin-right: 5%;
+}
+.gradient-circle {
+    width: 30vw;
+    height: 30vw;
+    background-color: #c6ff00;
+    background-image: url('../../src/gradient.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10vh;
+    z-index: -1;
+}
+.tours {}
+.tours::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.tours table {
+    width: 90%;
+    border-top: 2px solid #999;
+    border-collapse: collapse;
+}
+.tours table caption {
+    text-align: left;
+}
+.tours table thead {}
+.tours table thead tr {}
+.tours table thead tr th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tours table tbody {}
+.tours table tbody tr {
+    border-top: 1px solid #999;
+}
+.tours table tbody tr:last-child {
+    border-bottom: 1px solid #999;
+}
+.tours table tbody tr td {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.tours table tbody tr td:nth-of-type(1) {
+    padding-right: 50px;
+}
+.tours table tbody tr td:nth-of-type(2) {
+    padding-right: 50px;
+}
+.tours table tbody tr td:nth-of-type(3) {
+    padding-right: 10px;
+}
+.sub-contect {
+    margin-right: 10%;
+}
+.sub-contect dd:nth-of-type(1):after {
+    background-color: #ededed;
+}

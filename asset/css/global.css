@@ -255,6 +255,19 @@ footer.lightmode dl {
 footer.lightmode dl dd:nth-of-type(3) {
     color: #999;
 }
+/* sub page */
+.subtit {
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    font-size: 3em;
+    letter-spacing: 1.5px;
+}
+.subtit::after {
+    content: '.';
+    color: #30ff00;
+    font-size: 1.15em;
+}
 /* 1depth sub */
 .subpage-head {
     width: 90%;
@@ -269,4 +282,39 @@ footer.lightmode dl dd:nth-of-type(3) {
 }
 .subpage-head p {
     letter-spacing: 1px;
+}
+/* sub contact */
+.sub-contect {
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    margin-right: 5%;
+    float: right;
+}
+.sub-contect::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.sub-contect dt {
+    font-weight: 700;
+    margin-right: 30px;
+    float: left;
+}
+.sub-contect dd {
+    float: left;
+}
+.sub-contect dd a {
+    font-size: .9em;
+    text-decoration: underline;
+}
+.sub-contect dd:nth-of-type(1):after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 50px;
+    width: 5vw;
+    height: 1px;
+    background-color: #333;
 }
