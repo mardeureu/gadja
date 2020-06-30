@@ -43,11 +43,7 @@
         transform: rotateZ(0deg);
     }
 }
-canvas {
-    margin-left: 5%;
-    display: block;
-}
-figure {
+.swiper-container {
     width: 90%;
     display: flex;
     background-color: #333;
@@ -57,7 +53,7 @@ figure {
     left: 5%;
     z-index: 0;
 }
-figure img::before {
+.swiper-container img::before {
     content: '';
     position: absolute;
     top: 0;
@@ -67,15 +63,15 @@ figure img::before {
     background-color: #c6ff00;
     /* animation: main_slide_animation .5s cubic-bezier(0.78, 0.51, 0.14, 0.74) alternate both; */
 }
-figure video {
+.swiper-container video {
     min-width: 100%;
     margin-left: 5%;
 }
-figure img {
+.swiper-container img {
     width: 100%;
     margin-left: 5%;
 }
-figure img:first-child {
+.swiper-container img:first-child {
     margin-left: 0;
     /* animation: main_slide_animation .6s .5s cubic-bezier(0.78, 0.51, 0.14, 0.74) alternate both; */
 }
@@ -94,47 +90,38 @@ figcaption {
     width:1px;
     height:1px;
 }
-button#main_prev {
+.swiper-button-prev {
     position: absolute;
     bottom: 7%;
     left: 3%;
+    z-index: 11;
 }
-button#main_next {
+.swiper-button-next {
     position: absolute;
     bottom: 7%;
     right: 3%;
 }
-#main_prev:hover span,
-#main_next:hover span {
+.swiper-button-prev:hover span,
+.swiper-button-next:hover span {
+    background-color: #333;
+}
+.swiper-button-prev span,
+.swiper-button-next span {
     background-color: #c6ff00;
-}
-#main_prev span,
-#main_next span {
-    background-color: #fff;
     height: 1px;
+    transition: background-color .5s;
 }
-#main_prev span:nth-of-type(1) {
+.swiper-button-prev span:nth-of-type(1) {
     width: 30px;
     transform: translateX(30px) translateY(-5px) rotateZ(340deg);
 }
-#main_prev span:nth-of-type(2) {
+.swiper-button-prev span:nth-of-type(2) {
     width: 80px;
 }
-#main_next span:nth-of-type(1) {
+.swiper-button-next span:nth-of-type(1) {
     width: 80px;
 }
-#main_next span:nth-of-type(2) {
+.swiper-button-next span:nth-of-type(2) {
     width: 30px;
     transform: translateX(-30px) translateY(-5px) rotateZ(20deg);
-}
-/* slide */
-figure img:nth-of-type(1)::after {
-    content: 'North Korea Dance';
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 3em;
-    color: #fff;
-    width: 100%;
-    height: 100%;
 }
