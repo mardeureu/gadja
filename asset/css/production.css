@@ -94,3 +94,52 @@ body {
 .prod-container li figure:hover img {
     transform: scale3d(1.15, 1.15, 1);
     filter: contrast(120%);
+}
+
+/* scroll event */
+/* title & name */
+.prod-container li {
+    overflow: hidden;
+}
+.prod-container li .prod-tit {
+    opacity: 0;
+    transform: translateY(10%);
+    color: #333;
+    transition: all 1.8s;
+}
+.prod-container li span.is-visible {
+    opacity: 1;
+    color: #fff;
+    transform: translateY(0);
+}
+.prod-container li .prod-artist {
+    opacity: 0;
+    color: #333;
+    transform: translateY(-30%);
+    transition: all 1.6s;
+}
+.prod-container li span.is-visible {
+    opacity: 1;
+    color: #fff;
+    transform: translateY(0);
+}
+/* btn */
+.prod-container li > a {
+    background-color: #333;
+    transform: translateY(-10px);
+    opacity: 0;
+}
+.prod-container li > a.is-visible {
+    background-color: #c6ff00;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 2s;
+}
+/* img */
+.prod-container li figure a {
+    opacity: 0;
+    transition: all 3.5s;
+}
+.prod-container li figure a.is-visible {
+    opacity: 1;
+}

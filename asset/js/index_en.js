@@ -1,8 +1,6 @@
 window.addEventListener('DOMContentLoaded', function(){
     //swiper slide
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 30,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -12,17 +10,22 @@ window.addEventListener('DOMContentLoaded', function(){
             prevEl: '.swiper-button-prev',
         },
         autoplay: {
-            delay: 15000,
+            delay: 5000,
             stopOnLastOnide: false,
             disableOn: false,
-            reverseDirection: true,
-            WaitForTransition: true,
+            reverseDirection: false,
+            WaitForTransition: false,
         },
         keyboard: {
             enabled: true,
           },
+        speed: 600,
+        updateOnWindowResize: true,
+        setWrapperSize: true,
         loop: true,
+        //autoheight: true,
         });//swiper end
 
+    
 });//END
 
