@@ -1,12 +1,9 @@
-/**
+/*
  * Swiper 5.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://swiperjs.com
- *
  * Copyright 2014-2020 Vladimir Kharlampidi
- *
  * Released under the MIT License
- *
  * Released on: June 16, 2020
  */
 
@@ -28,9 +25,7 @@
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
-}
-.swiper-container-vertical > .swiper-wrapper {
-  flex-direction: column;
+  height: 100vh;
 }
 .swiper-wrapper {
   position: relative;
@@ -38,6 +33,7 @@
   height: 100%;
   z-index: 1;
   display: flex;
+  align-items: flex-end;
   transition-property: transform;
   box-sizing: content-box;
 }
@@ -48,10 +44,6 @@
 .swiper-container-multirow > .swiper-wrapper {
   flex-wrap: wrap;
 }
-.swiper-container-multirow-column > .swiper-wrapper {
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 .swiper-container-free-mode > .swiper-wrapper {
   transition-timing-function: ease-out;
   margin: 0 auto;
@@ -61,6 +53,8 @@
   width: 100%;
   height: 100%;
   position: relative;
+  display: flex;
+  align-items: flex-end;
   transition-property: transform;
 }
 .swiper-slide-invisible-blank {
@@ -141,7 +135,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 85%;
+  top: 95%;
   height: var(--swiper-navigation-size);
   margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
   z-index: 10;

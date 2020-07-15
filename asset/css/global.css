@@ -2,7 +2,10 @@
 header {
     width: 100%;
     position: fixed;
+    top: 0;
     z-index: 10;
+    display: block;
+    transition: top .3s ease;
 }
 header .memu {
     width: 90%;
@@ -13,7 +16,7 @@ header .memu {
     align-items: center;
 }
 header .memu label {
-    position: fixed;
+    position: relative;
     left: 5%;
     z-index: 9;
     display: block;
@@ -58,7 +61,7 @@ header .memu .pullmenu {
     width: 100vw;
     height: 100vh;
 }
-header .memu .pullmenu  nav {
+header .memu .pullmenu nav {
     width: 100%;
     position: relative;
 }
@@ -94,7 +97,7 @@ header .memu .pullmenu .menu-footer {
     transform: translateX(-50%);
 }
 header .memu .pullmenu .menu-footer .sns {
-}
+}   
 header .memu .pullmenu .menu-footer a {
 }
 header .memu .pullmenu .menu-footer a:nth-of-type(1) {
@@ -112,7 +115,7 @@ header .memu .pullmenu .menu-footer .symbol a {
     vertical-align: super;
 }
 header .memu h1 {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     font-size: 1.25em;
     color: #fff;
@@ -210,6 +213,13 @@ header.lightmode .memu .pullmenu nav .gab li:hover a{
 footer {
     margin: 0 auto;
     width: 90%;
+    position: relative;
+    padding-top: 20px;
+}
+footer::before {
+    content: '';
+    display: block;
+    padding-top: 5px;
     border-top: 1px solid #999;
 }
 footer::after {
@@ -275,10 +285,11 @@ footer.lightmode dl dd:nth-of-type(3) {
     color: #ededed;
     padding-bottom: 50px;
 }
-.subpage-head h2 {
+h2 {
     font-weight: 400;
     font-size: 5em;
     letter-spacing: 5px;
+    transition: .6s cubic-bezier(0.77, 0.54, 0.39, 0.8);
 }
 .subpage-head p {
     letter-spacing: 1px;
@@ -317,4 +328,10 @@ footer.lightmode dl dd:nth-of-type(3) {
     width: 5vw;
     height: 1px;
     background-color: #333;
+}
+
+/* scroll event */
+.headscroll {
+    font-size: 2em;
+    color: #999;
 }

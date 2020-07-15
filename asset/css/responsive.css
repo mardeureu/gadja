@@ -1,0 +1,108 @@
+    /*
+    responsive breakpoint
+    2560 ? 1920 ~ 1024 / 768 / 480 / 320 (ip5)
+    */
+    @media screen and (min-width: 1920px) {
+        /* main page */
+            
+            /* slide */
+            /* swiper contents */
+            .swiper-slide video,
+            .swiper-slide img {
+                width: 100%;
+                padding: 0 10px 0 0 ;
+                max-width: 1200px;
+                max-height: 585px;
+            }
+    }
+    @media screen and (max-width: 1024px) {
+        /* main page */
+        .text_circle {
+            width: 13%;
+        }
+        .slide-txt {
+            font-size: 4rem;
+            font-weight: 600;
+            position: absolute;
+            bottom: 20%;
+            right: 5%;
+        }
+        .slide-txt:hover {
+            font-family: 'Noto Serif', serif;
+            color: #30ff00;
+            font-size: 4rem;
+            font-weight: 600;
+            position: absolute;
+            bottom: 20%;
+            right: 5%;
+        }
+        /* slide */
+        .swiper-slide  {
+            align-items: flex-start;
+        }
+        .swiper-slide video,
+        .swiper-slide img {
+            width: 100%;
+            padding: 0 10px 0 0 ;
+        }
+        /* slideBtn */
+        .swiper-button-prev span:nth-of-type(2),
+        .swiper-button-next span:nth-of-type(1) {
+            width: 50px;
+        }
+        .swiper-button-prev span:nth-of-type(1) {
+            width: 20px;
+            transform: translateX(20px) translateY(-3px) rotateZ(340deg);
+        }
+        .swiper-button-next span:nth-of-type(2) {
+            width: 20px;
+            transform: translateX(-20px) translateY(-3px) rotateZ(20deg);
+        }
+    } /* 1024 end */
+
+    @media screen and (max-width: 768px) {
+        /* main page */
+        .main_menu {
+            display: none;
+        }
+        .text_circle {
+            width: 20%;
+            position: absolute;
+            bottom: 90%;
+            right: 5%;
+            z-index: 2;
+            
+            }
+        .slide-txt {
+            font-size: 2.8rem;
+            font-weight: 600;
+            position: absolute;
+            top: 30%;
+            left: 5%;
+        }
+        .slide-txt:hover {
+            font-size: 2.8rem;
+            font-weight: 600;
+            position: absolute;
+            top: 30%;
+            left: 5%;
+        }
+            /* slide */
+            
+            /* swiper contents */
+            .swiper-slide video,
+            .swiper-slide img {
+                padding: 0;
+            }
+            /* display: none */
+            .left-layout,
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+            }
+
+    }/* 768 end */
+
+    @media screen and (max-width: 480px) {
+        
+    }/* 480 end */

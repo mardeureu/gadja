@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="asset/css/global.css">
     <link rel="stylesheet" href="asset/css/swiper.css">
     <link rel="stylesheet" href="asset/css/index.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
     <!-- javascript -->
     <script type="text/javascript" src="asset/js/index_en.js"></script>
     <!-- favicon -->
@@ -57,29 +59,39 @@
             <button type="button" name="lang_switch">FR <span>&harr;</span> EN</button>
         </div>
     </header>
-
     <div class="wrap bg-dark index-en">
         <div class="left-layout">
             <ul class="main_menu">
-                <li><a href="artist.html">Artist</a></li>
-                <li><a href="productions.html">Productions</a></li>
-                <li><a href="tours.html">Tours</a></li>
+                <li><a href="en/artist.html">Artist</a></li>
+                <li><a href="en/productions.html">Productions</a></li>
+                <li><a href="en/tours.html">Tours</a></li>
             </ul>
         </div>
         <img src="asset/img/text_circle.svg" alt="text" class="text_circle">
         <!-- Swiper slide -->
         <div class="swiper-container">
+            <!-- <div class="main-box"><span class="main-line"></span></div> -->
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><video src="asset/video/northkoreadanceteaser1280x720.mp4" title="Artist ahn-eunme's Works north korea dance" autoplay muted loop playsinline></video>
-                </div>
-                <div class="swiper-slide"><img src="asset/img/main_slide_01_northkoreadance.jpg" class="slide_content" alt="Artist ahn-eunme's Works north korea dance">
-                </div>
-                <div class="swiper-slide"><img src="asset/img/main_slide_03_letmechangeyourname.jpg" class="slide_content" alt="Artist ahn-eunme's Works let me change your name">
-                </div>
-                <!-- <div class="swiper-slide"><img src="asset/img/main_slide_01_northkoreadance.jpg" class="slide_content" alt="Artist ahn-eunme's Works north korea dance">
-                </div>
-                <div class="swiper-slide"><img src="asset/img/main_slide_03_letmechangeyourname.jpg" class="slide_content" alt="Artist ahn-eunme's Works let me change your name">
-                </div> -->
+                <figure class="swiper-slide">
+                    <video src="asset/video/northkoreadanceteaser1280x720.mp4" title="Artist ahn-eunme's Works north korea dance" autoplay muted loop playsinline></video>
+                    <figcaption class="slide-txt">North Korea Dance</figcaption>
+                </figure>
+                <figure class="swiper-slide">
+                    <img src="asset/img/main_slide_01_northkoreadance.jpg" class="slide_content" alt="Artist ahn-eunme's Works north korea dance">
+                    <figcaption class="slide-txt">North Korea Dance</figcaption>
+                </figure>
+                <figure class="swiper-slide">
+                    <img src="asset/img/main_slide_02_letmechangeyourname.jpg" class="slide_content" alt="Artist ahn-eunme's Works let me change your name">
+                    <figcaption class="slide-txt">Let me change your name</figcaption>
+                </figure>
+                <figure class="swiper-slide">
+                    <video src="asset/video/dancinggrandmothers.mp4" title="Artist ahn-eunme's Works north korea dance" autoplay muted loop playsinline></video>
+                    <figcaption class="slide-txt">Dancing Grandmothers</figcaption>
+                </figure>
+                <figure class="swiper-slide">
+                    <img src="asset/img/main_slide_03_ahnsimdance.jpg" class="slide_content" alt="Artist ahn-eunme's Works let me change your name">
+                    <figcaption class="slide-txt">Ahnsim Dance</figcaption>
+                </figure>
             </div>
             <!-- slide Btn -->
             <button type="button" id="main_next" class="swiper-button-next"><span></span><span></span></button>

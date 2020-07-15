@@ -23,8 +23,11 @@ window.addEventListener('DOMContentLoaded', function(){
         updateOnWindowResize: true,
         setWrapperSize: true,
         loop: true,
+        
+
         //autoheight: true,
         });//swiper end
+
 
     
 });//END
