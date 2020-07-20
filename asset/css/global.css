@@ -5,7 +5,7 @@ header {
     top: 0;
     z-index: 10;
     display: block;
-    transition: top .3s ease;
+    transition: top .6s cubic-bezier(0.2, 0.77, 0.9, 0.86);
 }
 header .memu {
     width: 90%;
@@ -13,11 +13,11 @@ header .memu {
     margin: auto;
     color: #fff;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 header .memu label {
     position: relative;
-    left: 5%;
     z-index: 9;
     display: block;
     width: 60px;
@@ -289,10 +289,11 @@ h2 {
     font-weight: 400;
     font-size: 5em;
     letter-spacing: 5px;
-    transition: .6s cubic-bezier(0.77, 0.54, 0.39, 0.8);
+    transition: .6s cubic-bezier(0.2, 0.77, 0.9, 0.86);
 }
 .subpage-head p {
     letter-spacing: 1px;
+    transition: .6s cubic-bezier(0.2, 0.77, 0.9, 0.86);
 }
 /* sub contact */
 .sub-contect {
@@ -333,5 +334,9 @@ h2 {
 /* scroll event */
 .headscroll {
     font-size: 2em;
-    color: #999;
+    opacity: .5;
+    color: #444;
+}
+.subParaScroll {
+    color: #444;
 }

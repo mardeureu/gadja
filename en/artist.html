@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../asset/css/common.css">
     <link rel="stylesheet" href="../asset/css/global.css">
     <link rel="stylesheet" href="../asset/css/artist.css">
+    <link rel="stylesheet" href="../asset/css/responsive.css">
     <!-- javascript -->
     <script src="../asset/js/global.js"></script>
     <!-- favicon -->
@@ -75,7 +76,12 @@
                     <a href="sub/artist/artist_name.html">VIWE</a>
                 </div>
                 <figure>
-                    <a href="sub/artist/artist_name.html"><img src="../asset/img/artist/eunme_ahn.jpg" alt="Artist Eunme Ahn Photos"></a>
+                    <a href="sub/artist/artist_name.html">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="../asset/img/artist/eunme_ahn_w_350.jpg" type="image/jpg">
+                            <img src="../asset/img/artist/eunme_ahn.jpg" alt="Artist Eunme Ahn Photos">
+                        </picture>
+                    </a>
                 </figure>
             </li>
             <li>
@@ -84,7 +90,10 @@
                     <a href="#">VIWE</a>
                 </div>
                 <figure>
-                    <img src="../asset/img/artist/roni_horn.jpg" alt="Artist Roni Horn Photos">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="../asset/img/artist/roni_horn_w_350.jpg" type="image/jpg">
+                            <img src="../asset/img/artist/roni_horn.jpg" alt="Artist Roni Horn Photos">
+                    </picture>
                 </figure>
             </li>
             <li>
@@ -93,9 +102,13 @@
                     <a href="#">VIWE</a>
                 </div>
                 <figure>
-                    <img src="../asset/img/artist/wolfgang_tilmans.jpg" alt="Artist Wolfgang Tillmans Photos">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="../asset/img/artist/wolfgang_tilmans_w_220.jpg" type="image/jpg">
+                            <img src="../asset/img/artist/wolfgang_tilmans.jpg" alt="Artist Wolfgang Tillmans Photos">
+                    </picture>
                 </figure>
             </li>
+            <li></li>
         </ul>
     </div>
     <!-- contents END-->

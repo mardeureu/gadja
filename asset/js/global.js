@@ -15,11 +15,14 @@ window.addEventListener('DOMContentLoaded', function(){
   // head scroll event
   window.addEventListener('scroll', function() {
     let subHead2 = document.querySelector('h2');
-    const subHead3 = document.querySelector('h3');
+    let subPara = document.querySelector('.subpage-head p');
+    // const subHead3 = document.querySelector('h3');
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       subHead2.className = 'headscroll';
+      subPara.className = 'subParaScroll';
     } else {
       subHead2.className = '';
+      subPara.className = '';
     }
   
   });

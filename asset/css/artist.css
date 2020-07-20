@@ -4,7 +4,6 @@ body {
 .artist {
     margin-bottom: 50px;
 }
-
 .artist-list {
     width: 90%;
     margin: 0 auto;
@@ -12,8 +11,9 @@ body {
 }
 .artist-list li {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 1px;
     overflow: hidden;
 }
@@ -21,11 +21,13 @@ body {
     margin-bottom: 0;
 }
 .artist-list li .artist-txt-box {
+    min-width: 300px;
     height: 100%;
-    background-color: #333;
+    background-color: #444;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding-left: 80px;
 }
 .artist-list li:nth-of-type(even) {
@@ -53,21 +55,21 @@ body {
     background-color: #333;
     color: #fff
 }
-.artist-list li:nth-last-of-type(even) .artist-txt-box a:hover {
+.artist-list li:nth-last-of-type(odd) .artist-txt-box a:hover {
     border: 0px;
     background-color: #c6ff00;
     color: #333;
 }
-.artist-list li:nth-last-of-type(even) .artist-txt-box span {
+.artist-list li:nth-last-of-type(odd) .artist-txt-box span {
     color: #fff;
 }
-.artist-list li:nth-last-of-type(even) .artist-txt-box a {
+.artist-list li:nth-last-of-type(odd) .artist-txt-box a {
     border: 1px solid #fff;
     color: #fff;
 }
 .artist-list li figure {
-    height: 100%;
     overflow: hidden;
+    min-height: 400px;
 }
 .artist-list li figure:hover img {
     -ms-transform: scale3d(1.15, 1.15, 1);
@@ -75,28 +77,31 @@ body {
 }
 .artist-list li figure img {
     transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    object-position: center;
 }
 
 /* nth-oh-type */
-.artist-list li:nth-of-type(3n-1) .artist-txt-box {
+.artist-list li:nth-of-type(4n-3) .artist-txt-box,
+.artist-list li:nth-of-type(4n-2) .artist-txt-box 
+ {
     width: 34%;
 }
-.artist-list li:nth-of-type(3n-1) figure {
+.artist-list li:nth-of-type(4n-3) figure,
+.artist-list li:nth-of-type(4n-2) figure {
     width: 66%;
 }
-.artist-list li:nth-of-type(3n-1) figure img {}
-.artist-list li:nth-of-type(3n-2) .artist-txt-box {
+.artist-list li:nth-of-type(4n-1) .artist-txt-box,
+.artist-list li:nth-of-type(4n) .artist-txt-box {
+    width: 66%;
+}
+.artist-list li:nth-of-type(4n-1) figure,
+.artist-list li:nth-of-type(4n) figure {
     width: 34%;
 }
-.artist-list li:nth-of-type(3n-2) figure {
-    width: 66%;
+.artist-list li:nth-of-type(odd) figure {
+    text-align: right;
 }
-.artist-list li:nth-of-type(3n-2) figure img {}
-.artist-list li:nth-of-type(3n) .artist-txt-box {
-    width: 66%;
+.artist-list li:nth-of-type(even) figure {
+    text-align: left;
 }
-.artist-list li:nth-of-type(3n) figure {
-    width: 34%;
-}
-.artist-list li:nth-of-type(3n) figure img {}
 
