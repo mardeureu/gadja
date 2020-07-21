@@ -330,6 +330,9 @@
             font-size: 3.6vw;
             height: 12vh
         }
+        .prod-container {
+            width: 100%;
+        }
 
         /* contact */
         .contact-info div {
@@ -338,7 +341,6 @@
         }
 
         /* productions sub page */
-        
         .productions .prod-content-head {
             padding-top: 10px;
         }
@@ -441,6 +443,9 @@
         /* sub-page */
 
         /* artist list */
+        .artist-list {
+            width: 100%;
+        }
         .artist-list li {
             display: block;
         }
