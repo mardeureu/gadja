@@ -11,29 +11,29 @@ body {
 }
 .artist-list li {
     width: 100%;
-    height: 300px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 1px;
     overflow: hidden;
+    position: relative;
 }
 .artist-list li:last-child {
     margin-bottom: 0;
 }
 .artist-list li .artist-txt-box {
-    min-width: 300px;
-    height: 100%;
-    background-color: #444;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 80px;
+    padding-left:60px;
 }
 .artist-list li:nth-of-type(even) {
-    flex-direction: row-reverse;
+    flex-direction: row;
+    background-color: #444;
 }
-.artist-list li:nth-of-type(odd) .artist-txt-box {
+.artist-list li:nth-of-type(odd) {
     background-color: #c6ff00;
 }
 .artist-list li .artist-txt-box span /* name */{
@@ -69,15 +69,22 @@ body {
 }
 .artist-list li figure {
     overflow: hidden;
-    min-height: 400px;
 }
-.artist-list li figure:hover img {
-    -ms-transform: scale3d(1.15, 1.15, 1);
-    transform: scale3d(1.15, 1.15, 1);
+.artist-list li figure a {
+    font-size: 0;
 }
+
 .artist-list li figure img {
+    -ms-transform: scaleY(1) scaleX(1);
     transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
     object-position: center;
+    object-fit: cover;
+    min-height: 250px;
+    max-height: 250px;
+}
+.artist-list li figure:hover img {
+    -ms-transform: scaleY(1.15) scaleX(1.15);
+    transform: scaleY(1.15) scaleX(1.15);
 }
 
 /* nth-oh-type */
@@ -104,4 +111,7 @@ body {
 .artist-list li:nth-of-type(even) figure {
     text-align: left;
 }
-
+picture,
+source {
+    font-size: 0;
+}

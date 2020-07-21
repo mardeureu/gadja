@@ -57,13 +57,8 @@
             display: none;
         }
         /* artist list */
-        .artist-list li:nth-of-type(4n-3) figure,
-        .artist-list li:nth-of-type(4n-2) figure, {
-            min-height: 300px;
-        }
-        .artist-list li:nth-of-type(4n-1) figure,
-        .artist-list li:nth-of-type(4n) figure {
-            min-height: 300px;
+        .artist-list li .artist-txt-box {
+            padding-left: 5vw;
         }
 
         /* productions */
@@ -94,24 +89,6 @@
             margin-bottom: 10px;
             position: relative;
         }
-        /* .prod-container li .prod-tit::after {
-            content: '';
-            display: block;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 200;
-            border: 2px solid #c6ff00;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            transition: .3s;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 0;
-        }
-        .prod-container li .prod-tit:hover::after {
-            transform: rotateZ(45deg);
-        } */
         .prod-container li .prod-artist {
             font-size: 2.5vw;
         }
@@ -154,13 +131,100 @@
             width: 100%;
         }
 
+        /* productions sub page */
+        .productions .prod-content-head {
+            padding-top: 10px;
+        }
+        .productions .prod-content-head h3 {
+            margin: 0;
+            font-size: 5vw;
+        }
+        .productions .prod-content-head dl dd,
+        .productions .prod-content-head dl dt {
+            font-size: 10px;
+        }
+        .gradient-circle {
+            width: 40vw;
+            height: 40vw;
+            top: 50vh;
+            transform: translateX(-35%);
+        }
+        /* artist- sub page */
+        .artist_sub h3 {
+            font-size: 8vw;
+        }
+        .artist_sub h3 + p {
+            font-size: 1.7vw;
+        }
+        .artist-review {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .artist-sns {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            float: none;
+            padding-left: 0;
+        }
+        .artist_sub .artist-review p {
+            width: 100%;
+            float: none;
+        }
+        .artist_sub .artist-review p > span {
+            margin-top: 10px;
+        }
+        .artist_sub .artist-review p > span:first-child {
+            margin-top: 10px;
+        }
+        .artist-sns .line,
+        .artist-sns .artist-plus {
+            display: none;
+        }
+        .works {
+            width: 100%;
+            margin: 0;
+        }
+        .works h4 {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .works ul /* List of works */ {
+            width: 100%;
+            margin-left: 0;
+        }
+        .works ul li {
+            padding: 15px;
+        }
+        .works .artist-history-grid /* a few dates */ {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 5vh;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2vw;
+        }
+
+
 
     } /* 1024 end */
-
+ 
     @media screen and (max-width: 768px) {
 
-        /* header */
+        /* global */
 
+        /* sub */
+        /* sub page */
+        .subtit {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            font-size: 9vw;
+        }
         /* main page */
         .main_menu {
             display: none;
@@ -209,13 +273,23 @@
 
 
         /* artist list */
+        .artist-list {
+            padding-left: 0;
+        }
         .artist-list li:nth-of-type(4n-3) figure,
         .artist-list li:nth-of-type(4n-2) figure {
-            min-height: 300px;
+            width: 50%;
         }
         .artist-list li:nth-of-type(4n-1) figure,
         .artist-list li:nth-of-type(4n) figure {
-            min-height: 300px;
+            width: 50%;
+        }
+        .artist-list li:nth-of-type(4n-3) .artist-txt-box,
+        .artist-list li:nth-of-type(4n-2) .artist-txt-box,
+        .artist-list li:nth-of-type(4n-1) .artist-txt-box,
+        .artist-list li:nth-of-type(4n) .artist-txt-box
+        {
+            width: 50%;
         }
         
         /* productions */
@@ -229,7 +303,107 @@
             width: 100%;
             display: block;
         }
+
+        /* productions sub page */
         
+        .productions .prod-content-head {
+            padding-top: 10px;
+        }
+        .productions .prod-content-head h3 {
+            width: 100%;
+            font-size: 9vw;
+            margin-bottom: 5px;
+        }
+        .productions .prod-content-head dl {
+            float: none;
+            padding-bottom: 10px;
+        }
+        .productions .prod-content-wrap {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .productions .prod-content-wrap a {
+            font-size: .85em;
+            letter-spacing: 8px;
+            padding: 10px 10px;
+            float: none;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .productions .prod-content-wrap p {
+            width: 100%;
+            float: none;
+            font-size: 1.15em;
+            letter-spacing: .5px;
+        }
+        .productions .prod-content-wrap p span {
+            display: table;
+            margin-bottom: 10px;
+        }
+        .tours,
+        .productions .credit {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .productions .credit .credit-left,
+        .productions .credit .credit-right {
+            float: none;
+            width: 100%;
+        }
+        .productions .credit dt {
+            padding-top: 10px;
+            color: #ededed;
+        }
+        .productions .credit dd {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-weight: 700;
+        }
+        .tours table {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .tours table thead {
+            display: none;
+        }
+        .tours table tbody {
+            width: 100%;
+        }
+        .tours table tbody tr {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .tours table tbody tr td,
+        .tours table tbody tr td:nth-of-type(1),
+        .tours table tbody tr td:nth-of-type(2),
+        .tours table tbody tr td:nth-of-type(3) {
+            padding: 0;
+            margin: 5px 0;
+            width: 100%;
+        }
+        .tours table tbody tr td:nth-of-type(1) {
+            font-style: italic;
+            font-family: 'Noto Serif', serif;
+            font-size: .95em;
+            text-align: right;
+        }
+        .gradient-circle {
+            top: 50vh;
+            width: 75vw;
+            height: 75vw;
+            transform: translateX(-30%);
+        }
+        .sub-contect {
+            margin: 0 auto;
+            width: 90%;
+        }
+        /* artist- sub page */
+        .works .artist-history-grid /* a few dates */ {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
 
     }/* 768 end */
 
@@ -239,12 +413,19 @@
 
         /* artist list */
         .artist-list li {
-            height: 40vh;
             display: block;
         }
+        .artist-list li:nth-of-type(4n-3) .artist-txt-box,
+        .artist-list li:nth-of-type(4n-2) .artist-txt-box,
+        .artist-list li:nth-of-type(4n-1) .artist-txt-box,
+        .artist-list li:nth-of-type(4n) .artist-txt-box
+        {
+            width: 100%;
+        }
         .artist-list li .artist-txt-box {
-            min-width: 100%;
             padding-left: 0;
+            padding-top: 6vh;
+            padding-bottom: 6vh;
             align-items: center;
         }
         .artist-list li .artist-txt-box span /* name */{
@@ -261,6 +442,10 @@
         /* productions */
         .prod-container li .prod-tit {
             height: 10vh
+        }
+        /* artist- sub page */
+        .works .artist-history-grid /* a few dates */ {
+            grid-template-columns: repeat(2, 1fr);
         }
         
     }/* 480 end */

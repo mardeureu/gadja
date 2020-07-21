@@ -15,10 +15,12 @@ body {
     font-weight: 400;
     font-size: 3.5em;
     letter-spacing: 3px;
+    transition: .6s cubic-bezier(0.2, 0.77, 0.9, 0.86);
 }
 .productions .prod-content-head dl {
     float: right;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    transition: .7s cubic-bezier(0.2, 0.77, 0.9, 0.86);
 }
 .productions .prod-content-head dl::after {
     content: '';
@@ -64,7 +66,6 @@ body {
 }
 .productions .prod-content-wrap a:hover {
     border-radius: 20px;
-    /* background-color: #ededed; */
     color: #c6ff00;
     opacity: .8;
     box-shadow: 2px 2px 5px -5px rgba(255, 255, 255, .5);
@@ -109,7 +110,6 @@ body {
     padding-bottom: 30px;
     border-bottom: 1px solid #999;
     font-weight: 700;
-    
 }
 .productions .credit .credit-left {
     float: left;
@@ -223,3 +223,4 @@ body {
 .sub-contect dd:nth-of-type(1):after {
     background-color: #ededed;
 }
+
