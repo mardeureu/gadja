@@ -9,7 +9,7 @@ header {
 }
 header .memu {
     width: 90%;
-    height: 30px;
+    height: 40px;
     margin: auto;
     color: #fff;
     display: flex;
@@ -19,8 +19,8 @@ header .memu {
 header .memu label {
     position: relative;
     z-index: 9;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     display: flex;
     justify-content: space-evenly;
@@ -125,7 +125,7 @@ header .memu h1 a {
     font-size: inherit;
 }
 header .memu button {
-    height: 30px;
+    height: 40px;
     cursor: pointer;
     font-size: .8em;
 }
@@ -165,7 +165,7 @@ header.lightmode .memu .pullmenu nav .gab li:hover a{
     width: 90%;
     margin: 0 auto;
     text-align: right;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 .local-menu li {
     font-size: .9em;
