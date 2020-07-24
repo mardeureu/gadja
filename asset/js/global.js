@@ -2,7 +2,6 @@ window.addEventListener('DOMContentLoaded', function(){
   //hide nav onscroll
   var prevScrollPos = window.pageYOffset;
   window.addEventListener('scroll', function() {
-    
     var currnetScrollPos = window.pageYOffset;
     if (prevScrollPos > currnetScrollPos) {
         document.querySelector('header').style.top = 0;
@@ -43,7 +42,7 @@ window.addEventListener('DOMContentLoaded', function(){
         subHead3.className = '';
         subArtistPara.className = '';
       }
-    } 
+    }
 
   });//head scroll event end
 

@@ -14,61 +14,105 @@
     <title>Tours - GADJA</title>
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css">
     <link rel="stylesheet" href="../asset/css/common.css">
+    <link rel="stylesheet" href="../asset/css/global.css">
+    <link rel="stylesheet" href="../asset/css/tours.css">
     <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js"></script>
+    <script src="../asset/js/calender.js"></script>
     <!-- favicon -->
 </head>
 <body>
     <!-- header -->
-    <header role="banner">
-        <label for="burgermenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <input type="checkbox" id="burgermenu">
-        <nav role="navigation" aria-label="gnb">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Artist</li>
-                <li>Productions</li>
-                <li>Tours</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
-        </a>
-        <a href="#" class="sns" target="_blank" rel="me external noopener">
-            <img src="../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
-        </a>
-        <a href="../index.html"></a>
-        <button type="button" name="lang_switch">FR &harr; EN</button>
+    <header class="lightmode" role="banner">
+        <div class="memu">
+            <label for="burgermenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="burgermenu">
+            <div class="pullmenu">
+                <nav role="navigation" aria-label="gnb">
+                    <ul class="gab">
+                        <li><a href="../index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="artist.html">Artist</a></li>
+                        <li><a href="productions.html">Productions</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-footer" role="list">
+                        <a role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="12" src="../asset/img/logo/facebook.svg" alt="facebook logo, Click to go to Facebook">
+                        </a>
+                        <a  role="listitem" href="#" class="sns" target="_blank" rel="me external noopener">
+                            <img width="27" src="../asset/img/logo/vimeo.svg" alt="vimeo logo, Click to go to vimeo">
+                        </a>
+                    <div role="listitem" class="symbol"><a href="../index.html">GADJA</a></div>
+                </div>
+            </div>
+            <h1><a href="../index.html">GADJA</a></h1>
+            <button type="button" name="lang_switch">FR &harr; EN</button>
+        </div>
     </header>
 
     <!-- contents -->
-    <div class="wrap">
+    <div class="wrap tours">
         <!-- Local menu -->
-        <ul class="local-menu">
-            <li>Home</li>
-            <li>Tours</li>
+        <ul class="local-menu lightmode">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
         </ul>
-        <figure>
-            <img src="" alt="">
-        </figure>
-        <div>
-            <h6>North Korea Dance</h6>
-            <span aria-label="" class="slide-date">2020 04 28</span>
-            <span class="slide-place">&commat;Le Quartz</span>
-            <span>During the performance</span>
+        <!-- slide -->
+        <div id="slider-container" class="slider-container">
+            <div class="slides-wrapper">
+                <div id="slides-box" class="slides-box">
+                    <div class="slide-item">
+                        <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
+                        <div class="slide-txt">
+                            <h6>North Korea Dance</h6>
+                            <span class="current">During the performance</span>
+                            <span aria-label="" class="date">2020 04 28</span>
+                            <span class="place">&commat;Le Quartz</span>
+                        </div>
+                    
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
+                        <div class="slide-txt">
+                            <h6>North Korea Dance</h6>
+                            <span class="current">During the performance</span>
+                            <span aria-label="" class="date">2020 04 28</span>
+                            <span class="place">&commat;Le Quartz</span>
+                        </div>
+                    
+                    </div>
+                    <div class="slide-item">
+                        <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
+                        <div class="slide-txt">
+                            <h6>North Korea Dance</h6>
+                            <span class="current">During the performance</span>
+                            <span aria-label="" class="date">2020 04 28</span>
+                            <span class="place">&commat;Le Quartz</span>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <button id="prev">prev</button>
+            <button id="next">next</button>
         </div>
 
+        <!-- calender -->
+        <div id="calendar"></div>
     </div>
     <!-- contents END-->
 
     <!-- footer -->
-    <footer role="contentinfo">
+    <footer class="lightmode" role="contentinfo">
         <p>&copy;2016 par Gadja Productions.</p>
         <dl>
             <dt>Company</dt>

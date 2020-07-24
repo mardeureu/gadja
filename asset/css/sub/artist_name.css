@@ -125,7 +125,6 @@ body {}
 }
 .works ul li {
     border-bottom: 1px solid #999;
-    padding: 20px;
 }
 .works ul li::after {
     content: '';
@@ -135,73 +134,44 @@ body {}
 .works ul li:first-child {
     border-top: 1px solid #999;
 }
+.works ul li button {
+    width: 100%;
+    text-align: left;
+    transition: .6s cubic-bezier(0.2, 0.77, 0.9, 0.86);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.works ul li button.active,
+.works ul li button:hover {
+    background-color: #ededed;
+}
+.works ul li button.active span,
+.works ul li button:hover span {
+    font-weight: 700;
+    font-style: italic;
+}
 .works ul li time {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.05em;
     font-weight: 500;
     letter-spacing: 2px;
+    margin-right: 20px;
+    flex: 1;
 }
-.works ul li .tit {
+.works ul li button::after {
+    content: '\253C';
+    padding-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+}
+.works ul li button .tit {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.05em;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-left: 5%;
     cursor: pointer;
-}
-.works ul li button {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    float: right;
-}
-.works ul li button span {
-    position: absolute;
-}
-.works ul li button span:nth-of-type(1) {
-    width: 20px;
-    height: 1px;
-    background-color: #333;
-    top: calc(50% - .5px);
-    left: 0;
-}
-.works ul li button span:nth-of-type(2) {
-    width: 1px;
-    height: 20px;
-    background-color: #333;
-    top: 0;
-    left: calc(50% - .5px);
-}
-.works ul li .active {
-    display: none;
-    margin: 20px 0 ;
-}
-.works ul li .active figure {
-    /* 와이드 이미지로 보여주기 작은 이미지 답답해보임 */
-}
-.works ul li .active figure img {
-    
-}
-.works ul li .active p {
-    margin: 20px 0 ;
-    line-height: 1.5em;
-    letter-spacing: 1px;
-}
-.works ul li .active a {
-    border: 1px solid #333;
-    padding: 5px 40px;
-    font-size: .85em;
-    letter-spacing: 3px;
-    transition: .7s;
-    float: right;
-}
-.works ul li .active a:hover {
-    border-radius: 15px;
-    color: #fff;
-    background-color: #999;
-    border: 1px solid #999;
-    box-shadow: ;
-    transition: .3s;
+    transition: .1s linear;
+    flex: 12;
 }
 
 /* a few dates */
@@ -237,4 +207,48 @@ body {}
     font-weight: 500;
     letter-spacing: 2px;
 }
+/* accordion */
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: .6s cubic-bezier(0.18, 0.67, 0.38, 1.1);
+}
+.works ul li {
+    display: block;
+}
+.works ul li .panel figure {
+    /* 와이드 이미지로 보여주기 작은 이미지 답답해보임 */
+}
+.works ul li .panel figure img {
+    
+}
+.works ul li .panel p {
+    margin: 20px 0 ;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.works ul li .panel a {
+    border: 1px solid #333;
+    padding: 5px 40px;
+    font-size: .85em;
+    letter-spacing: 3px;
+    transition: .3s cubic-bezier(0.2, 0.77, 0.9, 0.86);
+    float: right;
+    margin-bottom: 15px;
+}
+.works ul li .panel a:hover {
+    border-radius: 15px;
+    color: #fff;
+    background-color: #999;
+    border: 1px solid #999;
+    box-shadow: ;
+    transition: .6s cubic-bezier(0.2, 0.77, 0.9, 0.86);
+}
+.works ul li button.active::after {
+    content: '\2500';
+}
 /* scroll event */
+.parascroll {
+    opacity: .3;
+}

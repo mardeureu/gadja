@@ -1,0 +1,29 @@
+.tours {}
+
+/* slide */
+.slider-container {
+  width: 500px;
+}
+.slider-container .slides-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+
+}
+.slider-container .slides-wrapper .slides-box {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -500px;
+  width: 10000px;
+}
+.slider-container .slides-wrapper .slides-box .slide-item {
+  width: 500px;
+}
+.slider-container button {
+  width: 30px;
+  height: 30px;
+  background-color: #ff0;
+}
+.slider-container #prev {}
+.slider-container #next {}

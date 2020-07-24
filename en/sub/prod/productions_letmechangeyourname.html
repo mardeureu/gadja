@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../../../asset/css/responsive.css">
     <!-- javascript -->
     <script src="../../../asset/js/global.js"></script>
+    <script src="../../../asset/js/prod_slide.js"></script>
     <!-- favicon -->
 </head>
 <body>
@@ -115,23 +116,20 @@
         </dl>
     </div>
     <!--full slide-->
-    <section class="gallrey-slide">
-        <figure>
-            <button type="button">&lt;</button>
-            <img src="../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_01.jpg" alt="">
-            <img src="../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_02.jpg" alt="">
-            <img src="../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_03.jpg" alt="">
-            <button type="button">&gt;</button>
-        </figure>
-        <div class="deco">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+    <section class="slider-container">
+        <div class="slider-wrap">
+            <div class="slider-box">
+                <figure class="slides">
+                    <div class="slide"><img src="../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_01.jpg" alt=""></div>
+                    <div class="slide"><img src="../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_02.jpg" alt=""></div>
+                    <div class="slide"><img src="../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_03.jpg" alt=""></div>   
+                </figure>
+            </div>
         </div>
+        <button id="prev" type="button">&lt;</button>
+        <button id="next" type="button">&gt;</button>
+        <div class="pagenation"></div>
+        <div class="deco"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </section>
     <div class="tours">
         <table>
