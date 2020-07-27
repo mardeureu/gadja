@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     //slider
     var sliderContainer = document.querySelector('.slider-container'),
         slidesBox = document.querySelector('.slides-box'),
@@ -36,8 +36,8 @@ window.addEventListener('DOMContentLoaded', function() {
         items.addEventListener('touchmove', dragAction);
 
         // Click events
-        prev.addEventListener('click', function () { shiftSlide(-1)});
-        next.addEventListener('click', function () { shiftSlide(1)});
+        prev.addEventListener('click', function () { shiftSlide(-1)} );
+        next.addEventListener('click', function () { shiftSlide(1)} );
 
         console.log(shiftSlide);
         
@@ -111,8 +111,17 @@ window.addEventListener('DOMContentLoaded', function() {
     //calender
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth'
-    });
+      initialView: 'dayGridMonth',
+      contentHeight: 'auto',
+      buttonIcons: {
+        prev: 'calender-month-prev',
+        next: 'calender-month-next',
+      },
+      aspectRatio: 1.8,
+
+
+    });//end
+    
     calendar.render();
 
 });
