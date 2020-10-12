@@ -1,3 +1,5 @@
+addEventListener("load", reqListener);
+
 //XHR func reqListener
 function reqListener() {
   var xmlhttp = new XMLHttpRequest();
@@ -13,7 +15,6 @@ function reqListener() {
   xmlhttp.send();
   console.log("reqListener test: " + xmlhttp);
 }//reqListener Func
-reqListener();
 
 //productions subpage
 function prodCFunc(xmlhttp) {
@@ -33,13 +34,17 @@ function prodCFunc(xmlhttp) {
   //data variable
   var dataTitle = dataLoot[0].title;
 
+  //loop
+  for (i = 0; i < dataLoot.length; i++) {
+    console.log();
+  }
   (function() {
     if (resTitle.innerText == "") {
       resTitle.textContent = dataTitle;
     } else {
       resTitle.textContent = "";
     }
-    console.log("prodCFunc test : " + dataTitle);
+    console.log("prodCFunc test : " + dataLoot);
   })();
 
 } //prodCFunc Func
