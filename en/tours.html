@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="../asset/css/common.css">
     <link rel="stylesheet" href="../asset/css/global.css">
     <link rel="stylesheet" href="../asset/css/tours.css">
+    <link rel="stylesheet" href="../asset/css/slide.css">
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js"></script>
-    <script src="../asset/js/calender.js"></script>
+    <script src="../asset/js/tours.js"></script>
+    <script defer src="../asset/js/slide.js"></script>
     <!-- favicon -->
 </head>
 <body>
@@ -66,43 +68,46 @@
             <li><a href="tours.html">Tours</a></li>
         </ul>
         <!-- slide -->
-        <div id="slider-container" class="slider-container">
-            <div class="slides-wrapper">
-                <div id="slides-box" class="slides-box">
-                    <div class="slide-item">
-                        <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
-                        <div class="slide-txt">
-                            <h6>North Korea Dance</h6>
-                            <span class="current">During the performance</span>
-                            <span aria-label="" class="date">2020 04 28</span>
-                            <span class="place">&commat;Le Quartz</span>
+        <div class="slide-container">
+            <div class="slide-wrap">
+                <div class="slide-box">
+                    <figure class="slide-list">
+                        <div class="slide-items">
+                            <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
+                            <div class="slide-txt">
+                                <h6>North Korea Dance</h6>
+                                <span class="current">During the performance</span>
+                                <span aria-label="" class="date">2020 04 28</span>
+                                <span class="place">&commat;Le Quartz</span>
+                            </div>
+                        
                         </div>
-                    
-                    </div>
-                    <div class="slide-item">
-                        <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
-                        <div class="slide-txt">
-                            <h6>North Korea Dance</h6>
-                            <span class="current">During the performance</span>
-                            <span aria-label="" class="date">2020 04 28</span>
-                            <span class="place">&commat;Le Quartz</span>
+                        <img src="../asset/img/prod/05_Let_Me_Change_Your_Name.jpg" alt="">
+                        <div class="slide-items">
+                            <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
+                            <div class="slide-txt">
+                                <h6>North Korea Dance</h6>
+                                <span class="current">During the performance</span>
+                                <span aria-label="" class="date">2020 04 28</span>
+                                <span class="place">&commat;Le Quartz</span>
+                            </div>
+                        
                         </div>
-                    
-                    </div>
-                    <div class="slide-item">
-                        <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
-                        <div class="slide-txt">
-                            <h6>North Korea Dance</h6>
-                            <span class="current">During the performance</span>
-                            <span aria-label="" class="date">2020 04 28</span>
-                            <span class="place">&commat;Le Quartz</span>
+                        <div class="slide-items">
+                            <div class="slide-img"><img src="../asset/img/tours/northkoreadance_20200428.jpg" alt="Artist Ahn Eun-me's photo of a dancer dancing at a North Korean dance"></div>
+                            <div class="slide-txt">
+                                <h6>North Korea Dance</h6>
+                                <span class="current">During the performance</span>
+                                <span aria-label="" class="date">2020 04 28</span>
+                                <span class="place">&commat;Le Quartz</span>
+                            </div>
+                        
                         </div>
-                    
-                    </div>
+                    </figure>
                 </div>
             </div>
-            <button id="prev">prev</button>
-            <button id="next">next</button>
+            <button id="prev" type="button">prev</button>
+            <button id="next" type="button">next</button>
         </div>
 
         <!-- calender -->

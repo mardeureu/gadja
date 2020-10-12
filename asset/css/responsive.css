@@ -231,14 +231,18 @@
             width: 100%;
             margin-left: 0;
         }
-        .works .artist-history-grid /* a few dates */ {
-            width: 100%;
-            margin-left: 0;
-            margin-bottom: 5vh;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2vw;
+        /* a few dates */
+        .works .artist-history-grid .history-block {
+            width: calc((100% / 4) - 10px);
+            min-height: 300px;
+            margin-right: 10px;
         }
-
+        .works .artist-history-grid .history-block:nth-of-type(6n) {
+            margin-right: 10px;
+        }
+        .works .artist-history-grid .history-block:nth-of-type(4n) {
+            margin-right: 0;
+        }
 
 
     } /* 1024 end */
@@ -428,8 +432,18 @@
             transform: translateX(-30%);
         }
         /* artist- sub page */
-        .works .artist-history-grid /* a few dates */ {
-            grid-template-columns: repeat(3, 1fr);
+        /* a few dates */
+        .works .artist-history-grid .history-block {
+            width: calc((100% / 3) - 10px);
+            min-height: 250px;
+            margin-right: 10px;
+        }
+        .works .artist-history-grid .history-block:nth-of-type(6n),
+        .works .artist-history-grid .history-block:nth-of-type(4n) {
+            margin-right: 10px;
+        }
+        .works .artist-history-grid .history-block:nth-of-type(3n) {
+            margin-right: 0;
         }
 
 
@@ -475,8 +489,16 @@
             height: 10vh
         }
         /* artist- sub page */
-        .works .artist-history-grid /* a few dates */ {
-            grid-template-columns: repeat(2, 1fr);
+        /* a few dates */
+        .works .artist-history-grid .history-block {
+            width: 100%;
+            min-height: auto;
+            padding-bottom: 10px;
+        }
+        .works .artist-history-grid .history-block:nth-of-type(6n),
+        .works .artist-history-grid .history-block:nth-of-type(4n),
+        .works .artist-history-grid .history-block {
+            margin-right: 0;
         }
         
     }/* 480 end */

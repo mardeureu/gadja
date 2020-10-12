@@ -61,4 +61,16 @@ function isElementInViewport(el) {
       (rect.top >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     );
+
+    //performerance slider
+    function performenceSlider() {
+      //performenceSlider
+      let sliderContainer = document.querySelector('.slider-container');
+      let slidetBox = sliderContainer.querySelector('.slider-box');
+      let slider = sliderContainer.querySelector('.slider');
+      var nxtPrv = document.getElementById('prev');
+      var nxtBtn = document.getElementById('next');
+
+      
+    }
   }

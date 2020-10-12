@@ -174,8 +174,53 @@ body {}
     flex: 12;
 }
 
+.works ul li figure {
+    margin: 10px 0;
+}
+
 /* a few dates */
 .works .artist-history-grid {
+    width: 80%;
+    margin-left: 20%;
+}
+.works .artist-history-grid .history-block {
+    border-top: 2px solid #666;
+    float: left;
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+    min-height: 300px;
+}
+.works .artist-history-grid .history-block:nth-of-type(6n) {
+    margin-right: 0;
+}
+.works .artist-history-grid .history-block .years::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.works .artist-history-grid .history-block .years::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: #30ff00;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+}
+.works .artist-history-grid .history-block .years {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05em;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+/*.works .artist-history-grid {
     width: 80%;
     margin-left: 20%;
     display: grid;
@@ -206,9 +251,50 @@ body {}
     font-size: 1.05em;
     font-weight: 500;
     letter-spacing: 2px;
+}*/
+.works .artist-history-grid .cube {
+    perspective: 500px;
+    transform-style: preserve-3d;
+    transform:rotateX(-30deg);
+    perspective-origin: 150% 150%;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
 }
-/* accordion */
+.works .artist-history-grid .cube span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.works .artist-history-grid .cube span:nth-of-type(1) {
+    border: 2px solid #333;
+    transform: translateZ(25px);
+}
+.works .artist-history-grid .cube span:nth-of-type(2) {
+    border-top: 2px solid #333;
+    transform: rotateY(-90deg) translateZ(25px);
+}
+.works .artist-history-grid .cube span:nth-of-type(3) {
+    border-bottom: 2px solid #333;
+    transform: rotateY(90deg) translateZ(25px);
+}
+.works .artist-history-grid .cube span:nth-of-type(4) {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
+    border-right: 2px solid transparent;
+    transform: rotateY(180deg) translateZ(25px);
+}
+.works .artist-history-grid .cube span:nth-of-type(5) {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #333;
+    transform: rotateY(180deg) translateZ(25px);
+}
 
+/* accordion */
 .panel {
     max-height: 0;
     overflow: hidden;
