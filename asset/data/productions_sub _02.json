@@ -1,0 +1,18 @@
+{
+    "title":"dragons",
+    "year":2020,
+    "artist":"Eun-Me Ahn",
+    "images":[
+        "../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_01.jpg","../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_02.jpg","../../../asset/img/sub/prod_sub_gallrey_slide_letmechangeyourname_03.jpg"
+    ],
+    "mainVisual":"../../../asset/video/letmechangeyourname1280x720.mp4",
+    "brochure":"../../",
+    "description":[
+        "modify","modify"
+    ],
+    "credits":{
+        "role":["Choreography and artistic direction","Music","Costumes and set design","Production","With the kind support of","Premiere on 04, 05 & 06th of September 2020","Yeongdeungpo Art Hall, Seoul (KR)"],
+        "cast":["Eun-Me Ahn","Young-Gyu Jang","Eun-Me Ahn","Eun-Me Ahn Company","Indonesian Dance Festival, ASWARA - Akademi Seni Budaya Dan Warisan Kebangsaan, Yokohama Red Brick Warehouse N°1",""],
+        "info":["Arts Council Korea, Yeongdeungpo Cultural Foundation, Busan Cultural Center, Théâtre de la Ville-Paris, Biennale de la Danse de Lyon, Festspielhaus St Pölten - Austria, Les Théâtres de la Ville de Luxembourg, Les Halles de Schaerbeek, National Kaohsiung Center for the Arts – Weiwuying (Taiwan)","Eun-Me Ahn is associated artist to Théâtre de la Ville-Paris","Piece for 12 dancers","Estimated running time : 75minutes"]
+    }
+}

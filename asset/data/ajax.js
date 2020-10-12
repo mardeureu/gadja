@@ -1,7 +1,13 @@
 //url을 조건으로 그 url과 같은 경우 해당 내용을 로드하기
 
-var urlId = location.url();
-console.log("urlId : " + urlId);
+var curURL = location.href;
+console.log("curURL : " + curURL);
+
+if (Boolean(curURL.indexOf('Letmechangeyourname'))) {
+  console.log("success");
+}
+
+//console.log();
 
 // //element
 // var elemTitle = document.querySelector(".prod-content-head h3");
@@ -37,9 +43,11 @@ function loadDoc() {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       prodCFunc(this);
+    } else {
+      console.log("XMLHttpRequest faled");
     }
   };
-  xmlhttp.open("GET", "../../../asset/data/data.json", true);
+  xmlhttp.open("GET", "../../../asset/data/productions_sub.json", true);
   xmlhttp.send();
 }//loadDoc Func
 
@@ -47,8 +55,11 @@ function loadDoc() {
 function prodCFunc(xmlhttp) {
   var i;
   var dataDoc = xmlhttp;
-  var perseObj = JSON.parse(dataDoc.responseText);
-  var dataLoot = perseObj.productions.EunMeAhn;
+  var perseObj = JSON.parse(dataDoc.reponseText);
+  var dataLoot = perseObj.EunMeAhn;
+ 
+  console.log(dataTitle);
+
   //DOM node resTitle
   var resTitle = document.querySelector('.productions .prod-content-head h3');
   var resArtist = document.querySelector('.productions .prod-content-head dl dd');
@@ -59,21 +70,24 @@ function prodCFunc(xmlhttp) {
   var resSlideImg = document.querySelector('.slide-list');
 
   //data
-  var dataTitle = dataLoot.Letmechangeyourname.title;
+  
+  var dataTitle = dataLoot.title;
 
-  //resTitle
   (function() {
     if (resTitle.innerText == "") {
       resTitle.textContent = dataTitle;
     } else {
       resTitle.textContent = "";
     }
+    console.log(dataTitle);
   })()
-
-  console.log(dataTitle);
-  console.log(location.hash.slice(1));
-
-}//prodCFunc Func
+  // var i;
+  // for (i = 0; i < dataTitle.length; i++) {
+  //   var dataTitle = dataLoot.title[i];
+  //   resTitle.textContent = dataTitle[i];
+  // }
+} //prodCFunc Func
+//  console.log(location.hash.slice(1));
 loadDoc();
 
 //dymamic create url page func
