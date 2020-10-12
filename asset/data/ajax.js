@@ -1,5 +1,7 @@
-var dIdx = location.hash.slice(1);
-// //console.log(dIdx);
+//url을 조건으로 그 url과 같은 경우 해당 내용을 로드하기
+
+var urlId = location.url();
+console.log("urlId : " + urlId);
 
 // //element
 // var elemTitle = document.querySelector(".prod-content-head h3");
@@ -30,8 +32,6 @@ var dIdx = location.hash.slice(1);
 // }
 
 
-if () {}
-
 function loadDoc() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
@@ -51,12 +51,12 @@ function prodCFunc(xmlhttp) {
   var dataLoot = perseObj.productions.EunMeAhn;
   //DOM node resTitle
   var resTitle = document.querySelector('.productions .prod-content-head h3');
-  var prodArtist = document.querySelector('.productions .prod-content-head dl dd');
-  var prodMain = document.querySelector('.productions .tralier');
-  var prodBrochure = document.querySelector('.productions .brochure');
-  var prodDesc = document.querySelector('.productions .prod-content-wrap p');
-  var prodCredit = document.querySelector('.productions .credit');
-  var prodSlideImg = document.querySelector('.slide-list');
+  var resArtist = document.querySelector('.productions .prod-content-head dl dd');
+  var resMain = document.querySelector('.productions .tralier');
+  var resBrochure = document.querySelector('.productions .brochure');
+  var resDesc = document.querySelector('.productions .prod-content-wrap p');
+  var resCredit = document.querySelector('.productions .credit');
+  var resSlideImg = document.querySelector('.slide-list');
 
   //data
   var dataTitle = dataLoot.Letmechangeyourname.title;
@@ -75,3 +75,6 @@ function prodCFunc(xmlhttp) {
 
 }//prodCFunc Func
 loadDoc();
+
+//dymamic create url page func
+
