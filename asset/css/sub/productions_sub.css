@@ -110,7 +110,7 @@ body {
     padding-bottom: 30px;
     border-bottom: 1px solid #999;
     font-weight: 700;
-}
+ }
 .productions .credit .credit-left {
     float: left;
     width: calc(50% - 10px);
@@ -119,10 +119,13 @@ body {
     float: right;
     width: calc(50% - 10px);
 }
-.productions .credit .credit-left dt:first-child,
-.productions .credit .credit-right dt:first-child {
+.productions .credit dt:nth-of-type(1) {
     border-top: 1px solid #999;
 }
+/*test*/
+.productions .credit {
+    height: ;
+} 
 /* slide */
 .slide-container button#prev,
 .slide-container button#next {
